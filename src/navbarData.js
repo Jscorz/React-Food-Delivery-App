@@ -21,3 +21,4 @@ export const links = [
     text: 'service',
   },
 ];
+export default links;
