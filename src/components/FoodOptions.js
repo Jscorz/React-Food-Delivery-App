@@ -73,6 +73,7 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
   h2 {
       color: rgba(0, 0, 0, 0.8);
+      margin-top: 1rem;
   }
    
   h3 {
