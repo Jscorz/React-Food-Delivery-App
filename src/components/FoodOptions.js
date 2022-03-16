@@ -78,6 +78,12 @@ transform: translateX(-50%);
  flex-direction: column;
  align-items: center;
  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+ transition: all .2s;
+ cursor: pointer;
+
+ &:hover {
+     transform: translateX(-48%);
+ }
   }
 
   .img-background  {
