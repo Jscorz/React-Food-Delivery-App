@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import '../index.css';
 import styled from 'styled-components';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import links from '../navbarData';
 
@@ -27,9 +27,23 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-          <button className='toggle'>
-            <FaBars />
-          </button>
+          <form>
+            <div className='form-control'>
+              <button>
+                <FaShoppingCart className='cart' />
+                <div className='cart-total'>6</div>
+              </button>
+
+              <FaSearch className='search-icon' />
+
+              <input
+                type='text'
+                name='text'
+                placeholder='Search'
+                className='search-input'
+              />
+            </div>
+          </form>
         </div>
       </section>
     </Wrapper>
@@ -41,25 +55,16 @@ export default Navbar;
 const Wrapper = styled.section`
   .nav-header {
     min-width: 90vw;
-    background-color: rgba(0, 0, 0, 0.4);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.25rem 0;
   }
 
-  .toggle {
-    padding: 0.5rem 0.5rem 0rem 0.5rem;
-    margin-right: 2rem;
-    border: none;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: grey;
-    cursor: pointer;
-  }
-
   img {
     max-height: 5rem;
+    margin-left: 5rem;
     cursor: pointer;
   }
 
@@ -73,7 +78,44 @@ const Wrapper = styled.section`
     font-size: 1.5rem;
     text-transform: Capitalize;
     margin-left: 2rem;
-    color: yellow;
+    color: grey;
     text-decoration: none;
+  }
+
+  .search-input {
+    padding: 0.5rem;
+    margin-right: 3rem;
+    position: relative;
+  }
+
+  .search-icon {
+    color: rgba(200, 17, 54, 0.8);
+    font-size: 1.2rem;
+    z-index: 2;
+    position: absolute;
+    right: 55px;
+    top: 32px;
+  }
+
+  button {
+    position: relative;
+    color: rgba(200, 17, 54, 0.9);
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+  }
+
+  .cart {
+    color: grey;
+    &-total {
+      font-size: 1rem;
+      position: absolute;
+      bottom: 1rem;
+      left: 0.3rem;
+      padding: 0.5rem;
+      border-radius: 60%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 `;
