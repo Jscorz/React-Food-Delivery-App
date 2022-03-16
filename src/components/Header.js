@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import '../index.css';
 import styled from 'styled-components';
 import MainText from './MainText';
+import FoodOptions from './FoodOptions';
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
       <section className='grid'>
         <article className='grid-second'>
           <MainText />
+          <FoodOptions />
         </article>
       </section>
     </Wrapper>
