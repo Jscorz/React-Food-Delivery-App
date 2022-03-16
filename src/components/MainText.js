@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MdDirectionsBike } from 'react-icons/md';
+import { BiPlayCircle } from 'react-icons/bi';
 
 const MainText = () => {
   return (
@@ -17,15 +18,17 @@ const MainText = () => {
           Delivery in <br />
           Your City
         </main>
-        <div>
+        <div className='short-text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           officiis id fugit iste exercitationem esse maxime, sequi dolor.
           Repudiandae, vitae.
         </div>
         <div className='button-container'>
-          <button>order now</button>
-          <button>some icon</button>
-          <p>Order Process</p>
+          <button className='order'>order now</button>
+          <button className='play'>
+            <BiPlayCircle />
+          </button>
+          <p className='process'>Order Process</p>
         </div>
       </section>
     </Wrapper>
@@ -79,6 +82,55 @@ const Wrapper = styled.section`
     margin-left: 10%;
     margin-top: 2%;
     color: rgba(0, 0, 0, 0.75);
+  }
+
+  .short-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .button-container {
+    // background-color: grey;
+    margin-left: 10%;
+    margin-top: 2%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .order {
+    background-color: rgba(251, 86, 48, 0.8);
+    color: #fff;
+    font-weight: 800;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .play {
+    background-color: transparent;
+    color: rgba(251, 86, 48, 0.8);
+    border: none;
+    border-radius: 50rem;
+    font-size: 3rem;
+
+    cursor: pointer;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+
+    display: flex;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .process {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    cursor: pointer;
   }
 `;
 
