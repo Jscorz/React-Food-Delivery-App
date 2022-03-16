@@ -11,12 +11,18 @@ const FoodOptions = () => {
         {CardData.map((item) => {
           return (
             <section className='card-container'>
-              <div className='container'>card container</div>
+              <div className='container'>
+                <div className='img-background'>
+                  <img src={item.img} />
+                </div>
+                <h2>{item.name}</h2>
+                <h3>{item.description}</h3>
+                <p>${item.price}</p>
+              </div>
             </section>
           );
         })}
       </section>
-      ;
     </Wrapper>
   );
 };
@@ -44,10 +50,38 @@ const Wrapper = styled.section`
   .container {
  background: white;
  height: 40vh;
- min-width: 60%;
+ min-width: 12vw;
  margin-top: 4vh;
  border-radius: 2rem;
 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  }
+
+  .img-background  {
+background-color: rgba(255, 72, 0, 0.204);
+padding: 1rem;
+margin-top: .5rem;
+border-radius: 50%;
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+      max-height: 15vh;
+  }
+
+  h2 {
+      color: rgba(0, 0, 0, 0.8);
+  }
+   
+  h3 {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  p {
+      color: rgba(0,0,0,0.6)
+      font-weight: 300;
   }
 `;
 
