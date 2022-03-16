@@ -34,14 +34,13 @@ const Navbar = () => {
                 <div className='cart-total'>6</div>
               </button>
 
-              <FaSearch className='search-icon' />
-
               <input
                 type='text'
                 name='text'
                 placeholder='Search'
                 className='search-input'
               />
+              <FaSearch className='search-icon' />
             </div>
           </form>
         </div>
@@ -89,6 +88,7 @@ const Wrapper = styled.section`
 
   .search-input {
     padding: 0.5rem;
+    padding-left: 2rem;
     margin-right: 3rem;
     position: relative;
   }
@@ -98,8 +98,9 @@ const Wrapper = styled.section`
     font-size: 1.2rem;
     z-index: 2;
     position: absolute;
-    right: 55px;
+    right: 11%;
     top: 34px;
+    cursor: pointer;
   }
 
   button {
@@ -112,6 +113,7 @@ const Wrapper = styled.section`
   }
 
   .cart {
+    cursor: pointer;
     color: grey;
     &-total {
       font-size: 1rem;
@@ -121,6 +123,7 @@ const Wrapper = styled.section`
       padding: 0.5rem;
       border-radius: 60%;
       background-color: rgba(0, 0, 0, 0.2);
+      cursor: pointer;
     }
   }
 `;
