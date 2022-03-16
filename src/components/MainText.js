@@ -12,7 +12,11 @@ const MainText = () => {
             <MdDirectionsBike />
           </button>
         </article>
-        <main>The Fastest Delivery in Your City</main>
+        <main>
+          The Fastest <br />
+          Delivery in <br />
+          Your City
+        </main>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           officiis id fugit iste exercitationem esse maxime, sequi dolor.
@@ -41,7 +45,7 @@ const Wrapper = styled.section`
     padding: 0.2 1.25rem;
     width: 15%;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 10%;
     border-radius: 5rem;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
@@ -67,6 +71,14 @@ const Wrapper = styled.section`
       font-weight: 800;
       color: rgba(200, 17, 54, 0.8);
     }
+  }
+
+  main {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.75);
   }
 `;
 
