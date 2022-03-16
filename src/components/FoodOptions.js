@@ -7,6 +7,23 @@ import CardDataTwo from '../CardDataTwo';
 const FoodOptions = () => {
   return (
     <Wrapper>
+      <section className='two'>
+        {CardDataTwo.map((item) => {
+          return (
+            <section className='card-container'>
+              <div className='container'>
+                <div className='img-background'>
+                  <img src={item.img} />
+                </div>
+                <h2>{item.name}</h2>
+                <h3>{item.description}</h3>
+                <p>${item.price}</p>
+              </div>
+            </section>
+          );
+        })}
+      </section>
+
       <section className='one'>
         {CardData.map((item) => {
           return (
@@ -30,6 +47,7 @@ const FoodOptions = () => {
 const Wrapper = styled.section`
   display: grid;
   grid-column: 2 / 4;
+  align-items: space-between;
   background-color: lightgrey;
   border-radius: 5rem 0 0 5rem;
 
@@ -48,15 +66,18 @@ const Wrapper = styled.section`
 }
 
   .container {
+transform: translateX(-50%);
  background: white;
  height: 40vh;
  min-width: 12vw;
+ padding: 1rem;
  margin-top: 4vh;
  border-radius: 2rem;
 
  display: flex;
  flex-direction: column;
  align-items: center;
+ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   .img-background  {
