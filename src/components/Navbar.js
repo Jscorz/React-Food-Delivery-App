@@ -77,11 +77,13 @@ const Wrapper = styled.section`
     font-size: 1.5rem;
     text-transform: Capitalize;
     margin-left: 2rem;
-    color: grey;
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     opacity: 0.7;
+    transition: all 0.2s;
 
-    &:hover {
+    &:hover,
+    &:active {
       opacity: 1;
     }
   }
