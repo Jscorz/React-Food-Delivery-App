@@ -80,6 +80,11 @@ const Wrapper = styled.section`
     margin-left: 2rem;
     color: grey;
     text-decoration: none;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .search-input {
@@ -94,7 +99,7 @@ const Wrapper = styled.section`
     z-index: 2;
     position: absolute;
     right: 55px;
-    top: 32px;
+    top: 34px;
   }
 
   button {
@@ -111,8 +116,8 @@ const Wrapper = styled.section`
     &-total {
       font-size: 1rem;
       position: absolute;
-      bottom: 1rem;
-      left: 0.3rem;
+      bottom: 50%;
+      left: 50%;
       padding: 0.5rem;
       border-radius: 60%;
       background-color: rgba(0, 0, 0, 0.2);
