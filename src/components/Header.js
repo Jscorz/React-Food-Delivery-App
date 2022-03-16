@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Wrapper>
       <section className='grid'>
-        <article className='grid-second'>second grid</article>
+        <article className='grid-second'></article>
       </section>
     </Wrapper>
   );
@@ -18,17 +18,19 @@ export default Header;
 
 const Wrapper = styled.section`
   .grid {
-    background-color: grey;
+    background-color: lightgrey;
     min-height: 80vh;
     max-width: 90vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-radius: 2%;
+    border-radius: 8%;
+
     &-second {
       margin: 2rem;
-      min-width: 90%;
+      min-width: 95%;
       background-color: white;
+      border-radius: 8%;
     }
   }
 `;
