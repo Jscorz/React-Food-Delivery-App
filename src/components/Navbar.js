@@ -69,10 +69,6 @@ const Wrapper = styled.section`
     @media only screen and (max-width: 800px) {
       max-height: 3rem;
     }
-
-    @media only screen and (max-width: 600px) {
-      max-height: 2.5rem;
-    }
   }
 
   ul {
@@ -105,14 +101,8 @@ const Wrapper = styled.section`
     @media only screen and (max-width: 800px) {
       max-width: 20vw;
       position: relative;
-      transform: translateX(-100%);
+      transform: translateX(-50%);
       padding: 0.2rem;
-    }
-
-    @media only screen and (max-width: 800px) {
-      max-width: 20vw;
-      position: relative;
-      transform: translateX(-100%);
     }
   }
 
