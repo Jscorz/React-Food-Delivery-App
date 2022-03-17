@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import EmailCard from './EmailCard';
 import Feedback from './Feedback';
+import BackHome from './BackHome';
 
 const Service = () => {
   return (
@@ -16,6 +17,7 @@ const Service = () => {
               Questions Or <br />
               Suggestions ?
             </h1>
+            <BackHome />
           </div>
           <Feedback />
           <EmailCard />
@@ -59,7 +61,8 @@ const Wrapper = styled.section`
     );
     border-radius: 5rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   h1 {
