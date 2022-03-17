@@ -31,6 +31,8 @@ const Wrapper = styled.section`
 
     &:hover {
       transform: translateY(-3%);
+      background-color: rgba(0, 0, 0, 0.1);
+      color: white;
     }
     & Link {
       text-decoration: none;
