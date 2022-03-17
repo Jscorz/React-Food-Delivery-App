@@ -46,7 +46,7 @@ const Wrapper = styled.section`
   article {
     background-color: rgba(251, 86, 48, 0.8);
     padding: 0.2 1.25rem;
-    width: 15%;
+    width: 8vw;
     margin-top: 10%;
     margin-left: 10%;
     border-radius: 5rem;
@@ -55,6 +55,23 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
+    @media only screen and (max-width: 1600px) {
+        width: 10vw;
+      }
+
+      @media only screen and (max-width: 1400px) {
+        width: 14vw;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        width: 18vw;
+      }
+
+      @media only screen and (max-width: 700px) {
+        width: 22vw;
+      }
   }
 
   .bike {
@@ -68,11 +85,12 @@ const Wrapper = styled.section`
   article {
     & p {
       display: flex;
-      flex-wrap: nowrap;
+      white-space: nowrap;
       text-transform: capitalize;
       margin-left: 1rem;
       font-weight: 800;
       color: rgba(200, 17, 54, 0.8);
+      m
     }
   }
 
