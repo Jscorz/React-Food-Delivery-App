@@ -1,11 +1,24 @@
 import React, { useState, useRef } from 'react';
+import { AiTwotoneMail } from 'react-icons/ai';
+
 import '../index.css';
 import styled from 'styled-components';
 
 const EmailCard = () => {
   return (
     <Wrapper>
-      <section>Email Component</section>
+      <section>
+        <a
+          rel='noreferrer'
+          target='_blank'
+          href='mailto:jkscorzafava@gmail.com'
+        >
+          <h1>Send Us an email</h1>
+          <button>
+            <AiTwotoneMail />
+          </button>
+        </a>
+      </section>
     </Wrapper>
   );
 };
@@ -27,5 +40,30 @@ const Wrapper = styled.section`
     min-width: 30vw;
     min-height: 15vh;
     border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+  button {
+    font-size: 2.5rem;
+    color: rgba(255, 72, 0, 0.6);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: -1rem;
   }
 `;
