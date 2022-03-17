@@ -96,6 +96,11 @@ transform: translateX(-50%);
     transform: translateX(0);
   }
 
+  @media only screen and (max-width: 700px) {
+    transform: translateX(0);
+    padding: .5rem 1.5rem;
+  }
+
  &:hover {
      transform: translateX(-48%);
  }
@@ -104,7 +109,7 @@ transform: translateX(-50%);
   .img-background  {
 background-color: rgba(255, 72, 0, 0.204);
 padding: 1rem;
-margin-top: .5rem;
+
 border-radius: 50%;
 box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
@@ -135,11 +140,24 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
       @media only screen and (max-width: 800px) {
         font-size: 1.2rem;
+
+        @media only screen and (max-width: 700px) {
+           font-size: 1.2rem;
+           margin-bottom: 1.5rem;
+          }
+
+          @media only screen and (max-width: 500px) {
+            font-size: .9rem;
+            margin-bottom: 1.5rem;
+           }
       }
   }
    
   h3 {
     color: rgba(0, 0, 0, 0.6);
+    @media only screen and (max-width: 700px) {
+        font-size: .7rem;
+       }
   }
 
   p {

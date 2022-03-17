@@ -107,6 +107,10 @@ const Wrapper = styled.section`
       @media only screen and (max-width: 800px) {
         font-size: 3rem;
       }
+      @media only screen and (max-width: 500px) {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+       }
   }
 
   .short-text {
@@ -116,6 +120,11 @@ const Wrapper = styled.section`
     margin-left: 10%;
     margin-top: 2%;
     color: rgba(0, 0, 0, 0.6);
+
+    @media only screen and (max-width: 500px) {
+        font-size: .8rem;
+        margin-bottom: 1.5rem;
+       }
   }
   .button-container {
     // background-color: grey;
@@ -157,6 +166,10 @@ const Wrapper = styled.section`
     color: rgba(0, 0, 0, 0.6);
     font-weight: 700;
     cursor: pointer;
+
+    @media only screen and (max-width: 800px) {
+        display: none;
+      }
   }
 
   span {
