@@ -32,7 +32,7 @@ const Wrapper = styled.section`
     &-second {
       margin: 2rem;
       min-width: 95%;
-      background-color: white;
+      background-color: orange;
       border-radius: 8%;
 
       display: grid;
