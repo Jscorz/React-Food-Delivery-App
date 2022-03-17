@@ -87,6 +87,7 @@ const Wrapper = styled.section`
   .short-text {
     font-size: 1.2rem;
     font-weight: 500;
+    max-width: 70%;
     margin-left: 10%;
     margin-top: 2%;
     color: rgba(0, 0, 0, 0.6);

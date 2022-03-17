@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
-  console.log(links);
+
   return (
     <Wrapper>
       <section className='section'>
@@ -65,6 +65,10 @@ const Wrapper = styled.section`
     margin-left: 5rem;
     cursor: pointer;
     margin-left: 15vw;
+
+    @media only screen and (max-width: 600px) {
+      max-height: 2rem;
+    }
   }
 
   ul {
@@ -92,7 +96,13 @@ const Wrapper = styled.section`
     padding: 0.5rem;
     padding-left: 2rem;
     margin-right: 3rem;
-    // position: relative;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: 700px) {
+      max-width: 20vw;
+      position: relative;
+      transform: translateX(-100%);
+    }
   }
 
   .search-icon {
@@ -102,7 +112,18 @@ const Wrapper = styled.section`
     margin-bottom: -0.3rem;
     cursor: pointer;
     transform: translateX(135%);
-    // transform: translateY(-20%);
+
+    @media only screen and (max-width: 700px) {
+      max-width: 20vw;
+      position: relative;
+      transform: translateX(-575%);
+    }
+
+    @media only screen and (max-width: 650px) {
+      max-width: 20vw;
+      position: relative;
+      transform: translateX(-500%);
+    }
   }
 
   button {
@@ -117,6 +138,13 @@ const Wrapper = styled.section`
   .cart {
     cursor: pointer;
     color: grey;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: 700px) {
+      transform: translateX(550%);
+      margin-bottom: -0.5rem;
+    }
+
     &-total {
       font-size: 1rem;
       position: absolute;
@@ -126,6 +154,18 @@ const Wrapper = styled.section`
       border-radius: 60%;
       background-color: rgba(0, 0, 0, 0.2);
       cursor: pointer;
+
+      @media only screen and (max-width: 700px) {
+        bottom: 10%;
+        left: 650%;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .links-container {
+    @media only screen and (max-width: 1100px) {
+      display: none;
     }
   }
 `;
