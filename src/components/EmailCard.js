@@ -54,7 +54,7 @@ const Wrapper = styled.section`
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     white-space: nowrap;
   }
 
