@@ -20,7 +20,7 @@ const Wrapper = styled.section`
   transform: translateX(-40%);
 
   section {
-    background: grey;
+    background: lightgrey;
     min-width: 30vw;
     min-height: 15vh;
     border-radius: 5rem;

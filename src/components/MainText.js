@@ -127,12 +127,12 @@ const Wrapper = styled.section`
        }
   }
   .button-container {
-    // background-color: grey;
     margin-left: 10%;
     margin-top: 2%;
 
     display: flex;
     align-items: center;
+    transition: all .2s;
   }
 
   .order {
@@ -145,6 +145,10 @@ const Wrapper = styled.section`
     border: none;
     padding: 1rem 2rem;
     border-radius: 1rem;
+
+    &:hover {
+      transform: translateY(-3%);
+    }
   }
 
   .play {
@@ -160,6 +164,10 @@ const Wrapper = styled.section`
 
     display: flex;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      transform: translateY(-3%);
+    }
   }
 
   .process {
@@ -169,6 +177,10 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 800px) {
         display: none;
+      }
+
+      &:hover {
+        transform: translateY(-3%);
       }
   }
 
