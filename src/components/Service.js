@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import '../index.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import EmailCard from './EmailCard';
+import Feedback from './Feedback';
 
 const Service = () => {
   return (
@@ -9,8 +11,14 @@ const Service = () => {
       <section className='grid'>
         <article className='grid-second'>
           <div className='main-text'>
-            Here's our mission statement and why we love our customers!
+            <h1>
+              Have More <br />
+              Questions For <br />
+              Us ?
+            </h1>
           </div>
+          <Feedback />
+          <EmailCard />
         </article>
       </section>
     </Wrapper>
@@ -36,18 +44,40 @@ const Wrapper = styled.section`
       border-radius: 5rem;
 
       display: grid;
-      grid-template-columns: 40% 1fr 1fr;
+      grid-template-columns: 70% 1fr;
+      transition: all 0.2s;
     }
   }
 
   .main-text {
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    grid-row: 1 / 3;
     background: linear-gradient(
       to right top,
       rgba(255, 72, 0, 0.8),
       rgba(255, 72, 0, 0.704)
     );
     border-radius: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.65);
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
   }
 `;
