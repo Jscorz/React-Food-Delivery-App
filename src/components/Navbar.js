@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FaBars, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import links from '../navbarData';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -21,6 +22,7 @@ const Navbar = () => {
                 const { id, url, text } = link;
                 return (
                   <li key={id}>
+                    <Link to={`/{text}`}></Link>
                     <a href={url}>{text}</a>
                   </li>
                 );
