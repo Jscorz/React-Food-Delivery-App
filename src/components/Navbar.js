@@ -66,8 +66,12 @@ const Wrapper = styled.section`
     cursor: pointer;
     margin-left: 15vw;
 
+    @media only screen and (max-width: 800px) {
+      max-height: 3rem;
+    }
+
     @media only screen and (max-width: 600px) {
-      max-height: 2rem;
+      max-height: 2.5rem;
     }
   }
 
@@ -98,7 +102,14 @@ const Wrapper = styled.section`
     margin-right: 3rem;
     transition: all 0.2s;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 800px) {
+      max-width: 20vw;
+      position: relative;
+      transform: translateX(-100%);
+      padding: 0.2rem;
+    }
+
+    @media only screen and (max-width: 800px) {
       max-width: 20vw;
       position: relative;
       transform: translateX(-100%);
@@ -113,16 +124,8 @@ const Wrapper = styled.section`
     cursor: pointer;
     transform: translateX(135%);
 
-    @media only screen and (max-width: 700px) {
-      max-width: 20vw;
-      position: relative;
-      transform: translateX(-575%);
-    }
-
-    @media only screen and (max-width: 650px) {
-      max-width: 20vw;
-      position: relative;
-      transform: translateX(-500%);
+    @media only screen and (max-width: 800px) {
+      display: none;
     }
   }
 
@@ -140,7 +143,7 @@ const Wrapper = styled.section`
     color: grey;
     transition: all 0.2s;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 800px) {
       transform: translateX(550%);
       margin-bottom: -0.5rem;
     }
@@ -155,7 +158,7 @@ const Wrapper = styled.section`
       background-color: rgba(0, 0, 0, 0.2);
       cursor: pointer;
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 800px) {
         bottom: 10%;
         left: 650%;
         font-size: 0.7rem;
