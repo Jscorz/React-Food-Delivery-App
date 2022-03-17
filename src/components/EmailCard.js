@@ -13,7 +13,7 @@ const EmailCard = () => {
           target='_blank'
           href='mailto:jkscorzafava@gmail.com'
         >
-          <h1>Send Us an email</h1>
+          <h1 className='email'>Send Us an email</h1>
           <button>
             <AiTwotoneMail />
           </button>
@@ -51,11 +51,17 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-3%);
+    }
   }
 
-  h1 {
+  .email {
     font-size: 2rem;
     white-space: nowrap;
+    margin-right: 1rem;
   }
 
   button {
