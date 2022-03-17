@@ -12,9 +12,9 @@ const Service = () => {
         <article className='grid-second'>
           <div className='main-text'>
             <h1>
-              Have More <br />
-              Questions For <br />
-              Us ?
+              Have Any <br />
+              Questions Or <br />
+              Suggestions ?
             </h1>
           </div>
           <Feedback />
