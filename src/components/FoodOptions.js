@@ -63,6 +63,7 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: space-between;
+    text-align: center;
 }
 
   .container {
@@ -81,6 +82,15 @@ transform: translateX(-50%);
  transition: all .2s;
  cursor: pointer;
 
+
+ @media only screen and (max-width: 1300px) {
+    width: 10vw;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 18vw;
+  }
+
  &:hover {
      transform: translateX(-48%);
  }
@@ -92,6 +102,10 @@ padding: 1rem;
 margin-top: .5rem;
 border-radius: 50%;
 box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+@media only screen and (max-width: 1300px) {
+    padding: .25rem;
+  }
   }
 
   img {
