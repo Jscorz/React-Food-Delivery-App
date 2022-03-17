@@ -16,7 +16,7 @@ const MainText = () => {
         <main>
           The Fastest <br />
           Delivery in <br />
-          Your City
+          <span>Your City</span>
         </main>
         <div className='short-text'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
@@ -131,6 +131,10 @@ const Wrapper = styled.section`
     color: rgba(0, 0, 0, 0.6);
     font-weight: 700;
     cursor: pointer;
+  }
+
+  span {
+    color: rgba(251, 86, 48, 0.8);
   }
 `;
 

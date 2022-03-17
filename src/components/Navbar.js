@@ -33,14 +33,13 @@ const Navbar = () => {
                 <FaShoppingCart className='cart' />
                 <div className='cart-total'>6</div>
               </button>
-
+              <FaSearch className='search-icon' />
               <input
                 type='text'
                 name='text'
                 placeholder='Search'
                 className='search-input'
               />
-              <FaSearch className='search-icon' />
             </div>
           </form>
         </div>
@@ -65,6 +64,7 @@ const Wrapper = styled.section`
     max-height: 5rem;
     margin-left: 5rem;
     cursor: pointer;
+    margin-left: 15vw;
   }
 
   ul {
@@ -92,17 +92,17 @@ const Wrapper = styled.section`
     padding: 0.5rem;
     padding-left: 2rem;
     margin-right: 3rem;
-    position: relative;
+    // position: relative;
   }
 
   .search-icon {
     color: rgba(200, 17, 54, 0.8);
     font-size: 1.2rem;
-    z-index: 2;
-    position: absolute;
-    right: 11%;
-    top: 34px;
+    z-index: 5;
+    margin-bottom: -0.3rem;
     cursor: pointer;
+    transform: translateX(135%);
+    // transform: translateY(-20%);
   }
 
   button {
