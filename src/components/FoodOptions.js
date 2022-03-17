@@ -88,7 +88,12 @@ transform: translateX(-50%);
   }
 
   @media only screen and (max-width: 1000px) {
-    width: 18vw;
+    width: 8vw;
+    padding:2.5rem 3rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    transform: translateX(0);
   }
 
  &:hover {
@@ -110,11 +115,27 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
   img {
       max-height: 15vh;
+
+      @media only screen and (max-width: 1200px) {
+        max-height: 12vw;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        max-height: 10vw;
+      }
   }
 
   h2 {
       color: rgba(0, 0, 0, 0.8);
       margin-top: 1rem;
+
+      @media only screen and (max-width: 1200px) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: 800px) {
+        font-size: 1.2rem;
+      }
   }
    
   h3 {

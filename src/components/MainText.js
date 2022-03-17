@@ -100,6 +100,13 @@ const Wrapper = styled.section`
     margin-left: 10%;
     margin-top: 2%;
     color: rgba(0, 0, 0, 0.75);
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 3rem;
+      }
+      @media only screen and (max-width: 800px) {
+        font-size: 3rem;
+      }
   }
 
   .short-text {
