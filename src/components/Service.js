@@ -55,9 +55,9 @@ const Wrapper = styled.section`
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background: linear-gradient(
-      to right top,
-      rgba(255, 72, 0, 0.8),
-      rgba(255, 72, 0, 0.704)
+      to bottom,
+      rgba(255, 72, 0, 0.7),
+      rgba(255, 72, 0, 0.05)
     );
     border-radius: 5rem;
     display: flex;

@@ -49,9 +49,9 @@ const Wrapper = styled.section`
       margin: 2rem;
       min-width: 95%;
       background: linear-gradient(
-        to right top,
-        rgba(255, 72, 0, 0.8),
-        rgba(255, 72, 0, 0.704)
+        to bottom,
+        rgba(255, 72, 0, 0.7),
+        rgba(255, 72, 0, 0.05)
       );
       border-radius: 5rem;
 
