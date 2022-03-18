@@ -3,6 +3,7 @@ import '../index.css';
 import styled from 'styled-components';
 import CardData from '../data/CardData';
 import CardDataTwo from '../data/CardDataTwo';
+import { Link } from 'react-router-dom';
 
 const FoodOptions = () => {
   return (
@@ -10,16 +11,18 @@ const FoodOptions = () => {
       <section className='two'>
         {CardDataTwo.map((item) => {
           return (
-            <section className='card-container'>
-              <div className='container'>
-                <div className='img-background'>
-                  <img src={item.img} />
+            <Link to='/Shop'>
+              <section className='card-container'>
+                <div className='container'>
+                  <div className='img-background'>
+                    <img src={item.img} />
+                  </div>
+                  <h2>{item.name}</h2>
+                  <h3>{item.description}</h3>
+                  <p className='price'>${item.price}</p>
                 </div>
-                <h2>{item.name}</h2>
-                <h3>{item.description}</h3>
-                <p className='price'>${item.price}</p>
-              </div>
-            </section>
+              </section>
+            </Link>
           );
         })}
       </section>
@@ -27,16 +30,18 @@ const FoodOptions = () => {
       <section className='one'>
         {CardData.map((item) => {
           return (
-            <section className='card-container'>
-              <div className='container'>
-                <div className='img-background'>
-                  <img src={item.img} />
+            <Link to='/Shop'>
+              <section className='card-container'>
+                <div className='container'>
+                  <div className='img-background'>
+                    <img src={item.img} />
+                  </div>
+                  <h2>{item.name}</h2>
+                  <h3>{item.description}</h3>
+                  <p className='price'>${item.price}</p>
                 </div>
-                <h2>{item.name}</h2>
-                <h3>{item.description}</h3>
-                <p className='price'>${item.price}</p>
-              </div>
-            </section>
+              </section>
+            </Link>
           );
         })}
       </section>

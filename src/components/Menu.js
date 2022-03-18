@@ -12,7 +12,9 @@ const Menu = () => {
           <div className='background'>
             <main className='card'>
               <p>No menu from us, but here are some </p>
-              <span>great options</span>
+              <Link to='/Shop'>
+                <span>great options</span>
+              </Link>
               <div className='button-container'>
                 <Link to='/'>
                   <button className='home'>Back to Home</button>
@@ -119,6 +121,11 @@ const Wrapper = styled.section`
 
   span {
     color: rgba(255, 72, 0, 0.6);
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 72, 0, 0.8);
+    }
   }
 
   .home {
