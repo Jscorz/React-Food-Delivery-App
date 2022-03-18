@@ -17,7 +17,9 @@ const Service = () => {
               Questions Or <br />
               Suggestions ?
             </h1>
-            <BackHome />
+            <div className='shadow'>
+              <BackHome />
+            </div>
           </div>
           <Feedback />
           <EmailCard />

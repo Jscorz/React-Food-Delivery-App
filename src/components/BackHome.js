@@ -27,6 +27,7 @@ const Wrapper = styled.section`
     border: none;
     padding: 1rem 2rem;
     border-radius: 1rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
     &:hover {
       transform: translateY(-3%);
