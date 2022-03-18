@@ -15,7 +15,9 @@ const Navbar = () => {
     <Wrapper>
       <section className='section'>
         <div className='nav-header'>
-          <img src={logo} alt='logo' />
+          <Link to='/'>
+            <img src={logo} alt='logo' />
+          </Link>
           <div className='links-container'>
             <ul className='links'>
               {links.map((link) => {
@@ -60,6 +62,10 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: space-between;
     padding: 0.25rem 0;
+
+    @media only screen and (max-width: 400px) {
+      padding: 0.5rem 0;
+    }
   }
 
   img {
@@ -69,6 +75,10 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 800px) {
       max-height: 3rem;
+    }
+    @media only screen and (max-width: 600px) {
+      max-height: 3rem;
+      margin-left: 2rem;
     }
   }
 
@@ -111,6 +121,21 @@ const Wrapper = styled.section`
       transform: translateX(-50%);
       padding: 0.2rem;
     }
+    @media only screen and (max-width: 500px) {
+      max-width: 20vw;
+      position: relative;
+      transform: translateX(-20%);
+      padding: 0.2rem;
+    }
+    @media only screen and (max-width: 450px) {
+      max-width: 15vw;
+      position: relative;
+      transform: translateX(-10%);
+      padding: 0.2rem;
+    }
+    @media only screen and (max-width: 450px) {
+      visibility: hidden;
+    }
   }
 
   .search-icon {
@@ -145,6 +170,11 @@ const Wrapper = styled.section`
       margin-bottom: -0.5rem;
     }
 
+    @media only screen and (max-width: 400px) {
+      transform: translateX(200%);
+      margin-bottom: -0.5rem;
+    }
+
     &-total {
       font-size: 1rem;
       position: absolute;
@@ -158,6 +188,12 @@ const Wrapper = styled.section`
       @media only screen and (max-width: 800px) {
         bottom: 10%;
         left: 650%;
+        font-size: 0.7rem;
+      }
+
+      @media only screen and (max-width: 400px) {
+        bottom: 10%;
+        left: 140%;
         font-size: 0.7rem;
       }
     }
