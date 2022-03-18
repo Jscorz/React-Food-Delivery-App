@@ -88,9 +88,15 @@ const Wrapper = styled.section`
     opacity: 0.7;
     transition: all 0.2s;
 
-    &:hover,
-    &:active {
+    &:hover {
       opacity: 1;
+    }
+  }
+
+  li {
+    &:hover {
+      opacity: 1;
+      transform: translateY(-3%);
     }
   }
 

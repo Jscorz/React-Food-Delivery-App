@@ -59,7 +59,7 @@ const Wrapper = styled.section`
   }
 
   .email {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2rem;
     white-space: nowrap;
     margin-right: 1rem;

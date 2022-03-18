@@ -13,11 +13,16 @@ const Menu = () => {
             <main className='card'>
               <p>No menu from us, but here are some </p>
               <span>great options</span>
-              <Link to='/Shop'>
-                <button>
-                  <BsArrowRightCircle />
-                </button>
-              </Link>
+              <div className='button-container'>
+                <Link to='/'>
+                  <button className='home'>Back to Home</button>
+                </Link>
+                <Link to='/Shop'>
+                  <button className='button'>
+                    <BsArrowRightCircle />
+                  </button>
+                </Link>
+              </div>
             </main>
           </div>
         </article>
@@ -89,23 +94,51 @@ const Wrapper = styled.section`
     text-align: center;
   }
 
-  button {
+  .button {
     color: rgba(255, 72, 0, 0.6);
     font-size: 3.5rem;
+    margin-bottom: -10%;
 
     background: transparent;
     border: none;
-    margin-left: 2rem;
+    margin-left: 1rem;
     cursor: pointer;
     transition: all 0.2s;
+    transform: translateY(35%);
 
     &:hover {
-      transform: translateX(3%);
+      transform: translateY(37%);
       color: rgba(255, 72, 0, 0.9);
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   span {
     color: rgba(255, 72, 0, 0.6);
+  }
+
+  .home {
+    background-color: light-grey;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 800;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+    &:hover {
+      transform: translateY(-3%);
+      background-color: rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+    & Link {
+      text-decoration: none;
+    }
   }
 `;

@@ -24,7 +24,6 @@ const Wrapper = styled.section`
     cursor: pointer;
     margin-left: 10%;
     margin-top: 10%;
-
     border: none;
     padding: 1rem 2rem;
     border-radius: 1rem;

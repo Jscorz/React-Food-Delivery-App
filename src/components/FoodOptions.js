@@ -17,7 +17,7 @@ const FoodOptions = () => {
                 </div>
                 <h2>{item.name}</h2>
                 <h3>{item.description}</h3>
-                <p>${item.price}</p>
+                <p className='price'>${item.price}</p>
               </div>
             </section>
           );
@@ -34,7 +34,7 @@ const FoodOptions = () => {
                 </div>
                 <h2>{item.name}</h2>
                 <h3>{item.description}</h3>
-                <p>${item.price}</p>
+                <p className='price'>${item.price}</p>
               </div>
             </section>
           );
@@ -160,9 +160,9 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
        }
   }
 
-  p {
-      color: rgba(0,0,0,0.6)
-      font-weight: 300;
+  .price {
+    color: rgba(255, 0, 0, 0.801);
+      font-weight: 500;
   }
 `;
 
