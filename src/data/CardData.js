@@ -1,5 +1,5 @@
-import burger from './assets/burger.png';
-import pho from './assets/steaming.png';
+import burger from '../assets/burger.png';
+import pho from '../assets/steaming.png';
 
 export const CardData = [
   {

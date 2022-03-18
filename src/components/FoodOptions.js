@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import '../index.css';
 import styled from 'styled-components';
-import CardData from '../CardData';
-import CardDataTwo from '../CardDataTwo';
+import CardData from '../data/CardData';
+import CardDataTwo from '../data/CardDataTwo';
 
 const FoodOptions = () => {
   return (

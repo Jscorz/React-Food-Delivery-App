@@ -1,5 +1,5 @@
-import sushi from './assets/sushi.png';
-import pizza from './assets/pizza.png';
+import sushi from '../assets/sushi.png';
+import pizza from '../assets/pizza.png';
 
 export const CardDataTwo = [
   {

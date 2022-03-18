@@ -3,7 +3,7 @@ import '../index.css';
 import styled from 'styled-components';
 import { FaBars, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import logo from '../assets/logo.png';
-import links from '../navbarData';
+import links from '../data/navbarData';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
