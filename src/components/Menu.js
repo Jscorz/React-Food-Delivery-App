@@ -85,7 +85,7 @@ const Wrapper = styled.section`
     font-weight: 800;
 
     color: rgba(0, 0, 0, 0.65);
-    padding: 2rem;
+    padding: 3rem;
 
     display: flex;
     align-items: center;
