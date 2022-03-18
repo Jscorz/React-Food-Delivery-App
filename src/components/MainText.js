@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { MdDirectionsBike } from 'react-icons/md';
 import { BiPlayCircle } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const MainText = () => {
   return (
@@ -23,13 +24,15 @@ const MainText = () => {
           officiis id fugit iste exercitationem esse maxime, sequi dolor.
           Repudiandae, vitae.
         </div>
-        <div className='button-container'>
-          <button className='order'>order now</button>
-          <button className='play'>
-            <BiPlayCircle />
-          </button>
-          <p className='process'>Order Process</p>
-        </div>
+        <Link to='Shop'>
+          <div className='button-container'>
+            <button className='order'>order now</button>
+            <button className='play'>
+              <BiPlayCircle />
+            </button>
+            <p className='process'>Order Process</p>
+          </div>
+        </Link>
       </section>
     </Wrapper>
   );

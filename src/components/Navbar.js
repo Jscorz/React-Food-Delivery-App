@@ -64,9 +64,8 @@ const Wrapper = styled.section`
 
   img {
     max-height: 5rem;
-    margin-left: 5rem;
+    margin-left: 7rem;
     cursor: pointer;
-    margin-left: 15vw;
 
     @media only screen and (max-width: 800px) {
       max-height: 3rem;
@@ -103,7 +102,7 @@ const Wrapper = styled.section`
   .search-input {
     padding: 0.5rem;
     padding-left: 2rem;
-    margin-right: 3rem;
+    margin-right: 7rem;
     transition: all 0.2s;
 
     @media only screen and (max-width: 800px) {
@@ -165,7 +164,7 @@ const Wrapper = styled.section`
   }
 
   .links-container {
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 1200px) {
       display: none;
     }
   }
