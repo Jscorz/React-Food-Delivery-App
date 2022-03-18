@@ -94,17 +94,26 @@ transform: translateX(-50%);
 
   @media only screen and (max-width: 800px) {
     transform: translateX(0);
+
   }
 
   @media only screen and (max-width: 700px) {
     transform: translateX(0);
     padding: .5rem 1.5rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
   }
 
- &:hover {
-     transform: translateX(-48%);
- }
+  @media only screen and (min-width: 850px) {
+
+    &:hover {
+      transform: translateX(-48%);
+    }
   }
+}
 
   .img-background  {
 background-color: rgba(255, 72, 0, 0.204);
