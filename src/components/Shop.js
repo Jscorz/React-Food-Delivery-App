@@ -3,7 +3,10 @@ import '../index.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import FoodOptions from './FoodOptions';
-import tacobell from '../assets/tacobell.png';
+import tacobell from '../assets/tacobell.jpg';
+import pizzahut from '../assets/pizzahut.jpg';
+import pho from '../assets/pho.jpg';
+import burger from '../assets/burger.jpg';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
 
 const Shop = () => {
@@ -16,17 +19,17 @@ const Shop = () => {
               <main className='column-1'>
                 <section className='card-container-2'>
                   <div className='img-container'>
-                    <img src={tacobell} alt='taco bell' />
+                    <img src={pizzahut} alt='pizza hut' />
                   </div>
                   <div className='card-info-container'>
                     <div className='text-container'>
-                      <h3>Taco Bell</h3>
+                      <h3>Scorza Pizzeria </h3>
                       <div className='text-container-second'>
                         <div className='distance-container'>
-                          <h5 className='margin-right'>| 0.4mi </h5>
-                          <h5>| 11 min</h5>
+                          <h5 className='margin-right'>| 1.7mi </h5>
+                          <h5>| 21 min</h5>
                         </div>
-                        <h5>| $3.99 delivery fee</h5>
+                        <h5>| $5.99 delivery fee</h5>
                       </div>
                     </div>
                     <article className='arrow-container'>
@@ -37,17 +40,17 @@ const Shop = () => {
                 </section>
                 <section className='card-container-2'>
                   <div className='img-container'>
-                    <img src={tacobell} alt='taco bell' />
+                    <img src={pho} alt='pho le' />
                   </div>
                   <div className='card-info-container'>
                     <div className='text-container'>
-                      <h3>Taco Bell</h3>
+                      <h3>Pho Le</h3>
                       <div className='text-container-second'>
                         <div className='distance-container'>
-                          <h5 className='margin-right'>| 0.4mi </h5>
-                          <h5>| 11 min</h5>
+                          <h5 className='margin-right'>| 0.9mi </h5>
+                          <h5>| 13 min</h5>
                         </div>
-                        <h5>| $3.99 delivery fee</h5>
+                        <h5>| $7.99 delivery fee</h5>
                       </div>
                     </div>
                     <article className='arrow-container'>
@@ -60,17 +63,17 @@ const Shop = () => {
               <main className='column-2'>
                 <section className='card-container'>
                   <div className='img-container'>
-                    <img src={tacobell} alt='taco bell' />
+                    <img src={burger} alt='burger spot' />
                   </div>
                   <div className='card-info-container'>
                     <div className='text-container'>
-                      <h3>Taco Bell</h3>
+                      <h3>Burger Spot</h3>
                       <div className='text-container-second'>
                         <div className='distance-container'>
-                          <h5 className='margin-right'>| 0.4mi </h5>
-                          <h5>| 11 min</h5>
+                          <h5 className='margin-right'>| 0.2mi </h5>
+                          <h5>| 5 min</h5>
                         </div>
-                        <h5>| $3.99 delivery fee</h5>
+                        <h5>| $4.99 delivery fee</h5>
                       </div>
                     </div>
                     <article className='arrow-container'>
@@ -85,7 +88,7 @@ const Shop = () => {
                   </div>
                   <div className='card-info-container'>
                     <div className='text-container'>
-                      <h3>Taco Bell</h3>
+                      <h3>El Rancho</h3>
                       <div className='text-container-second'>
                         <div className='distance-container'>
                           <h5 className='margin-right'>| 0.4mi </h5>
@@ -186,6 +189,7 @@ const Wrapper = styled.section`
 
   img {
     min-width: 20vw;
+    max-height: 20vh;
     object-fit: cover;
     display: block;
   }
@@ -219,6 +223,7 @@ const Wrapper = styled.section`
 
   h3 {
     color: rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
   }
 
   h5 {
