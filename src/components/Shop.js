@@ -241,14 +241,15 @@ const Wrapper = styled.section`
   }
 
   .arrow {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-left: 1rem;
     color: rgba(0, 0, 0, 0.4);
     transition: all 1s;
     cursor: pointer;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.65);
+      color: rgba(0, 0, 0, 0.7);
+      transform: rotate(90deg);
     }
   }
 `;

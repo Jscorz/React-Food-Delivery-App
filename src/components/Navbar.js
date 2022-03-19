@@ -7,10 +7,6 @@ import links from '../data/navbarData';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false);
-  const linksContainerRef = useRef(null);
-  const linksRef = useRef(null);
-
   return (
     <Wrapper>
       <section className='section'>
