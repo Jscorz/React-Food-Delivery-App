@@ -126,6 +126,7 @@ const Wrapper = styled.section`
     border: 1px solid lightgrey;
     margin-left: 15vw;
     margin-top: 10vh;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   .card-container-2 {
@@ -136,6 +137,7 @@ const Wrapper = styled.section`
     border: 1px solid lightgrey;
     margin-top: 10vh;
     margin-left: 15vw;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   img {
