@@ -63,6 +63,19 @@ const Shop = () => {
                 </div>
               </div>
             </section>
+            <section className='card-container'>
+              <div className='img-container'>
+                <img src={tacobell} alt='taco bell' />
+              </div>
+              <div className='text-container'>
+                <h3>Taco Bell</h3>
+                <div className='text-container-second'>
+                  <h5>0.4mi</h5>
+                  <h5>11 min</h5>
+                  <h5>$3.99 delivery fee</h5>
+                </div>
+              </div>
+            </section>
           </div>
         </article>
       </section>

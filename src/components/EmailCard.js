@@ -67,7 +67,7 @@ const Wrapper = styled.section`
 
   button {
     font-size: 2.5rem;
-    color: rgba(255, 72, 0, 0.6);
+    color: rgba(255, 72, 0, 0.4);
     background: transparent;
     border: none;
     cursor: pointer;
