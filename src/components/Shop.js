@@ -228,6 +228,7 @@ const Wrapper = styled.section`
 
   h5 {
     color: rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
   }
 
   .arrow-container {

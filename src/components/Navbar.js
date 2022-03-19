@@ -136,7 +136,7 @@ const Wrapper = styled.section`
       transform: translateX(-10%);
       padding: 0.2rem;
     }
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 750px) {
       visibility: hidden;
     }
   }
@@ -173,6 +173,11 @@ const Wrapper = styled.section`
       margin-bottom: -0.5rem;
     }
 
+    @media only screen and (max-width: 550px) {
+      transform: translateX(200%);
+      margin-bottom: -0.5rem;
+    }
+
     @media only screen and (max-width: 400px) {
       transform: translateX(200%);
       margin-bottom: -0.5rem;
@@ -194,6 +199,12 @@ const Wrapper = styled.section`
         font-size: 0.7rem;
       }
 
+      @media only screen and (max-width: 550px) {
+        bottom: 10%;
+        left: 140%;
+        font-size: 0.7rem;
+      }
+
       @media only screen and (max-width: 400px) {
         bottom: 10%;
         left: 140%;
@@ -209,15 +220,29 @@ const Wrapper = styled.section`
   }
 
   .toggle {
-    border: 2px solid rgba(200, 17, 54, 0.8);
+    border: 2px solid rgba(255, 72, 0, 0.7);
     border-radius: 50%;
-    padding: 0.5rem;
+    padding: 0.3rem;
     cursor: pointer;
 
     transform: translateX(-300%);
 
     &:hover {
       border: 2px solid rgba(200, 17, 54, 0.4);
+    }
+
+    @media only screen and (max-width: 750px) {
+      padding: 0.3rem;
+      transform: translateX(-100%);
+    }
+
+    @media only screen and (min-width: 800px) {
+      padding: 0.3rem;
+      transform: translateX(-150%);
+    }
+
+    @media only screen and (min-width: 1000px) {
+      transform: translateX(-200%);
     }
 
     @media only screen and (min-width: 1200px) {
@@ -229,6 +254,10 @@ const Wrapper = styled.section`
       color: rgba(255, 72, 0, 0.7);
 
       transform: translateY(5%);
+
+      @media only screen and (max-width: 800px) {
+        font-size: 1.7rem;
+      }
 
       @media only screen and (min-width: 1200px) {
         display: none;
