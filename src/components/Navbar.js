@@ -201,13 +201,13 @@ const Wrapper = styled.section`
 
       @media only screen and (max-width: 550px) {
         bottom: 10%;
-        left: 140%;
+        left: 300%;
         font-size: 0.7rem;
       }
 
       @media only screen and (max-width: 400px) {
         bottom: 10%;
-        left: 140%;
+        left: 300%;
         font-size: 0.7rem;
       }
     }
