@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import FoodOptions from './FoodOptions';
 import tacobell from '../assets/tacobell.png';
+import { IoIosArrowDropupCircle } from 'react-icons/io';
 
 const Shop = () => {
   return (
@@ -17,30 +18,42 @@ const Shop = () => {
                   <div className='img-container'>
                     <img src={tacobell} alt='taco bell' />
                   </div>
-                  <div className='text-container'>
-                    <h3>Taco Bell</h3>
-                    <div className='text-container-second'>
-                      <div className='distance-container'>
-                        <h5 className='margin-left'>| 0.4mi </h5>
-                        <h5>| 11 min</h5>
+                  <div className='card-info-container'>
+                    <div className='text-container'>
+                      <h3>Taco Bell</h3>
+                      <div className='text-container-second'>
+                        <div className='distance-container'>
+                          <h5 className='margin-right'>| 0.4mi </h5>
+                          <h5>| 11 min</h5>
+                        </div>
+                        <h5>| $3.99 delivery fee</h5>
                       </div>
-                      <h5>$3.99 delivery fee</h5>
                     </div>
+                    <article className='arrow-container'>
+                      <h4>Popular Items</h4>
+                      <IoIosArrowDropupCircle className='arrow' />
+                    </article>
                   </div>
                 </section>
                 <section className='card-container-2'>
                   <div className='img-container'>
                     <img src={tacobell} alt='taco bell' />
                   </div>
-                  <div className='text-container'>
-                    <h3>Taco Bell</h3>
-                    <div className='text-container-second'>
-                      <div className='distance-container'>
-                        <h5 className='margin-left'>| 0.4mi </h5>
-                        <h5>| 11 min</h5>
+                  <div className='card-info-container'>
+                    <div className='text-container'>
+                      <h3>Taco Bell</h3>
+                      <div className='text-container-second'>
+                        <div className='distance-container'>
+                          <h5 className='margin-right'>| 0.4mi </h5>
+                          <h5>| 11 min</h5>
+                        </div>
+                        <h5>| $3.99 delivery fee</h5>
                       </div>
-                      <h5>$3.99 delivery fee</h5>
                     </div>
+                    <article className='arrow-container'>
+                      <h4>Popular Items</h4>
+                      <IoIosArrowDropupCircle className='arrow' />
+                    </article>
                   </div>
                 </section>
               </main>
@@ -49,30 +62,42 @@ const Shop = () => {
                   <div className='img-container'>
                     <img src={tacobell} alt='taco bell' />
                   </div>
-                  <div className='text-container'>
-                    <h3>Taco Bell</h3>
-                    <div className='text-container-second'>
-                      <div className='distance-container'>
-                        <h5 className='margin-left'>| 0.4mi </h5>
-                        <h5>| 11 min</h5>
+                  <div className='card-info-container'>
+                    <div className='text-container'>
+                      <h3>Taco Bell</h3>
+                      <div className='text-container-second'>
+                        <div className='distance-container'>
+                          <h5 className='margin-right'>| 0.4mi </h5>
+                          <h5>| 11 min</h5>
+                        </div>
+                        <h5>| $3.99 delivery fee</h5>
                       </div>
-                      <h5>$3.99 delivery fee</h5>
                     </div>
+                    <article className='arrow-container'>
+                      <h4>Popular Items</h4>
+                      <IoIosArrowDropupCircle className='arrow' />
+                    </article>
                   </div>
                 </section>
                 <section className='card-container'>
                   <div className='img-container'>
                     <img src={tacobell} alt='taco bell' />
                   </div>
-                  <div className='text-container'>
-                    <h3>Taco Bell</h3>
-                    <div className='text-container-second'>
-                      <div className='distance-container'>
-                        <h5 className='margin-left'>| 0.4mi </h5>
-                        <h5>| 11 min</h5>
+                  <div className='card-info-container'>
+                    <div className='text-container'>
+                      <h3>Taco Bell</h3>
+                      <div className='text-container-second'>
+                        <div className='distance-container'>
+                          <h5 className='margin-right'>| 0.4mi </h5>
+                          <h5>| 11 min</h5>
+                        </div>
+                        <h5>| $3.99 delivery fee</h5>
                       </div>
-                      <h5>$3.99 delivery fee</h5>
                     </div>
+                    <article className='arrow-container'>
+                      <h4>Popular Items</h4>
+                      <IoIosArrowDropupCircle className='arrow' />
+                    </article>
                   </div>
                 </section>
               </main>
@@ -126,7 +151,6 @@ const Wrapper = styled.section`
 
   .card-container {
     display: flex;
-    cursor: pointer;
     flex-direction: column;
     background-color: white;
     border: 1px solid lightgrey;
@@ -137,13 +161,17 @@ const Wrapper = styled.section`
 
   .card-container-2 {
     display: flex;
-    cursor: pointer;
     flex-direction: column;
     background-color: white;
     border: 1px solid lightgrey;
     margin-top: 10vh;
     margin-left: 15vw;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-info-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   img {
@@ -175,7 +203,7 @@ const Wrapper = styled.section`
     margin-top: 1vh;
   }
 
-  .margin-left {
+  .margin-right {
     margin-right: 1.5rem;
   }
 
@@ -185,5 +213,26 @@ const Wrapper = styled.section`
 
   h5 {
     color: rgba(0, 0, 0, 0.6);
+  }
+
+  .arrow-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 2rem 1rem;
+    align-self: flex-end;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+  }
+
+  .arrow {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+    transition: all 1s;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.65);
+    }
   }
 `;
