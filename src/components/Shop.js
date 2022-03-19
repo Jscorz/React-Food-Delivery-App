@@ -20,8 +20,10 @@ const Shop = () => {
                   <div className='text-container'>
                     <h3>Taco Bell</h3>
                     <div className='text-container-second'>
-                      <h5>0.4mi</h5>
-                      <h5>11 min</h5>
+                      <div className='distance-container'>
+                        <h5 className='margin-left'>| 0.4mi </h5>
+                        <h5>| 11 min</h5>
+                      </div>
                       <h5>$3.99 delivery fee</h5>
                     </div>
                   </div>
@@ -33,8 +35,10 @@ const Shop = () => {
                   <div className='text-container'>
                     <h3>Taco Bell</h3>
                     <div className='text-container-second'>
-                      <h5 className='margin-left'>0.4mi</h5>
-                      <h5>11 min</h5>
+                      <div className='distance-container'>
+                        <h5 className='margin-left'>| 0.4mi </h5>
+                        <h5>| 11 min</h5>
+                      </div>
                       <h5>$3.99 delivery fee</h5>
                     </div>
                   </div>
@@ -48,8 +52,10 @@ const Shop = () => {
                   <div className='text-container'>
                     <h3>Taco Bell</h3>
                     <div className='text-container-second'>
-                      <h5>0.4mi</h5>
-                      <h5>11 min</h5>
+                      <div className='distance-container'>
+                        <h5 className='margin-left'>| 0.4mi </h5>
+                        <h5>| 11 min</h5>
+                      </div>
                       <h5>$3.99 delivery fee</h5>
                     </div>
                   </div>
@@ -148,7 +154,7 @@ const Wrapper = styled.section`
 
   .text-container {
     display: flex;
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 1rem 2rem 2rem 1rem;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -165,6 +171,8 @@ const Wrapper = styled.section`
   .distance-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
   }
 
   .margin-left {
