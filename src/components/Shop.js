@@ -157,6 +157,11 @@ const Wrapper = styled.section`
     margin-left: 15vw;
     margin-top: 10vh;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .card-container-2 {
@@ -167,6 +172,11 @@ const Wrapper = styled.section`
     margin-top: 10vh;
     margin-left: 15vw;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .card-info-container {
