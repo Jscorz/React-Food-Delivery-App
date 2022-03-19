@@ -46,6 +46,9 @@ const Navbar = () => {
               />
             </div>
           </form>
+          <button className='toggle'>
+            <FaBars className='toggle-icon' />
+          </button>
         </div>
       </section>
     </Wrapper>
@@ -202,6 +205,34 @@ const Wrapper = styled.section`
   .links-container {
     @media only screen and (max-width: 1200px) {
       display: none;
+    }
+  }
+
+  .toggle {
+    border: 2px solid rgba(200, 17, 54, 0.8);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    transform: translateX(-300%);
+
+    &:hover {
+      border: 2px solid rgba(200, 17, 54, 0.4);
+    }
+
+    @media only screen and (min-width: 1200px) {
+      display: none;
+    }
+
+    &-icon {
+      font-size: 2.2rem;
+      color: rgba(255, 72, 0, 0.7);
+
+      transform: translateY(5%);
+
+      @media only screen and (min-width: 1200px) {
+        display: none;
+      }
     }
   }
 `;
