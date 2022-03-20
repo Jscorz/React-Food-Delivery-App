@@ -53,7 +53,9 @@ const Wrapper = styled.section`
     }
     @media only screen and (max-width: 600px) {
       border-radius: 1rem;
-      min-height: 2rem;
+      min-height: 5vh;
+      min-width: 5vw;
+      padding: 0.5rem;
     }
   }
 
