@@ -7,16 +7,38 @@ import styled from 'styled-components';
 import logo from '../assets/logo.png';
 
 const Sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <SidebarContainer>
-      <div className='sidebar-header'>
-        <img src={logo} className='logo' alt='meals 2 u' />
-        <button className='close-btn' type='button'>
-          <FaTimes />
-        </button>
-      </div>
+      <aside
+        className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
+      >
+        <div className='sidebar-header'>
+          <img src={logo} className='logo' alt='meals 2 u' />
+          <button
+            className='close-btn'
+            type='button'
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            <FaTimes />
+          </button>
+        </div>
+        <div className='links-container'>
+          <ul className='links'>
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id}>
+                  <Link to={`/{text}`}></Link>
+                  <a href={url} onClick={() => setIsSidebarOpen(false)}>
+                    {text}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </aside>
     </SidebarContainer>
   );
 };
@@ -24,16 +46,30 @@ const Sidebar = () => {
 export default Sidebar;
 
 const SidebarContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 100vw;
-  width: 100%;
-  height: 100%;
-  background: white;
-  transition: all 1s;
-  transform: translate(-100%);
-  //   z-index: -1;
-  z-index: 1;
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: all 1s;
+    transform: translate(-100%);
+    visibility: hidden;
+  }
+
+  .show-sidebar {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: all 1s;
+    transform: translate(-100%);
+    visibility: visible;
+    z-index: 5;
+  }
 
   .logo {
     margin-left: 5rem;
