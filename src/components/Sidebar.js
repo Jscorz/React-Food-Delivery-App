@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import logo from '../assets/logo.png';
 
 const Sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   return (
     <SidebarContainer>
       <aside
