@@ -5,11 +5,13 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Shop from './components/Shop';
 import Service from './components/Service';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Sidebar />
       <Routes>
         <Route exact path='/' element={<Header />} />
         <Route path='/menu' element={<Menu />} />
