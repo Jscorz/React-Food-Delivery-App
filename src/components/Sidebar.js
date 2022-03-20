@@ -57,7 +57,7 @@ const SidebarContainer = styled.div`
 
     &:hover {
       color: rgba(255, 72, 0, 0.9);
-      transform: rotateY(180deg);
+      transform: rotate(90deg);
     }
   }
 `;
