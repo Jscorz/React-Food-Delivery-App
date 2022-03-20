@@ -12,29 +12,29 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useSidebarContext();
   return (
     <SidebarContainer>
-      <aside
-        className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
-      >
-        <div className='sidebar-header'>
-          <img src={logo} className='logo' alt='meals 2 u' />
-          <button className='close-btn' type='button' onClick={closeSidebar}>
-            <FaTimes />
-          </button>
-        </div>
-        <div className='links-container'>
-          <ul className='links'>
-            {links.map((link) => {
-              const { id, url, text } = link;
-              return (
-                <li key={id}>
-                  <Link to={`/{text}`}></Link>
-                  <a href={url}>{text}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </aside>
+      <section className='hide-sidebar'>
+        <aside className={`${isSidebarOpen ? 'show-sidebar' : 'sidebar'}`}>
+          <div className='sidebar-header'>
+            <img src={logo} className='logo' alt='meals 2 u' />
+            <button className='close-btn' type='button' onClick={closeSidebar}>
+              <FaTimes />
+            </button>
+          </div>
+          <div className='links-container'>
+            <ul className='links'>
+              {links.map((link) => {
+                const { id, url, text } = link;
+                return (
+                  <li key={id}>
+                    <Link to={`/{text}`}></Link>
+                    <a href={url}>{text}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </aside>
+      </section>
     </SidebarContainer>
   );
 };
@@ -45,13 +45,14 @@ const SidebarContainer = styled.div`
   .sidebar {
     position: fixed;
     top: 0;
+    left: 0;
     left: 100vw;
     width: 100%;
     height: 100%;
     background: white;
     transition: all 1s;
     transform: translate(-100%);
-    visibility: hidden;
+    z-index: -1;
   }
 
   .show-sidebar {
@@ -63,20 +64,19 @@ const SidebarContainer = styled.div`
     background: white;
     transition: all 1s;
     transform: translate(-100%);
-    visibility: visible;
-    z-index: 5;
+    z-index: 2;
   }
 
   .logo {
-    margin-left: 5rem;
+    margin-left: 15vw;
     max-height: 5rem;
   }
 
   .sidebar-header {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 20vh;
   }
 
   .close-btn {
@@ -86,10 +86,29 @@ const SidebarContainer = styled.div`
     color: rgba(255, 72, 0, 0.7);
     cursor: pointer;
     transition: all 1s;
+    margin-right: 15vw;
 
     &:hover {
       color: rgba(255, 72, 0, 0.9);
       transform: rotate(90deg);
     }
+  }
+
+  .links {
+    min-height: 90vh;
+    min-width: 100%;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    margin-top: 10vh;
+  }
+
+  a {
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
   }
 `;
