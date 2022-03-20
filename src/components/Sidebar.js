@@ -26,22 +26,23 @@ export default Sidebar;
 const SidebarContainer = styled.div`
   position: fixed;
   top: 0;
-  left: 110vw;
+  left: 100vw;
   width: 100%;
   height: 100%;
-  background: var(--clr-white);
-  transition: var(--transition);
+  background: white;
+  transition: all 1s;
   transform: translate(-100%);
   //   z-index: -1;
   z-index: 1;
 
   .logo {
+    margin-left: 5rem;
     max-height: 5rem;
   }
 
   .sidebar-header {
     display: flex;
-    width: 85%;
+    width: 90%;
     justify-content: space-between;
     margin-top: 2rem;
   }
