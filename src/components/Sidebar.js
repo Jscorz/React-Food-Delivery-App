@@ -50,7 +50,6 @@ const SidebarContainer = styled.div`
     width: 100%;
     height: 100%;
     background: white;
-    transition: all 1s;
     transform: translate(-100%);
     z-index: -1;
   }
@@ -62,7 +61,6 @@ const SidebarContainer = styled.div`
     width: 100%;
     height: 100%;
     background: white;
-    transition: all 1s;
     transform: translate(-100%);
     z-index: 2;
   }
