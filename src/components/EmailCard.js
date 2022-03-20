@@ -42,14 +42,14 @@ const Wrapper = styled.section`
   section {
     background: lightgrey;
     min-width: 30vw;
-    min-height: 15vh;
+    min-height: 8vh;
     border-radius: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media only screen and (max-width: 800px) {
-      min-height: 10vh;
+      min-height: 6vh;
     }
     @media only screen and (max-width: 600px) {
       border-radius: 1rem;
@@ -73,7 +73,7 @@ const Wrapper = styled.section`
   }
 
   .email {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 2rem;
     white-space: nowrap;
     margin-right: 1rem;

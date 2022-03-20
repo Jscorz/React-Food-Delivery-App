@@ -68,6 +68,7 @@ const SidebarContainer = styled.div`
   .logo {
     margin-left: 15vw;
     max-height: 5rem;
+    opacity: 0.7;
   }
 
   .sidebar-header {
@@ -81,13 +82,13 @@ const SidebarContainer = styled.div`
     font-size: 3.5rem;
     border: none;
     background-color: transparent;
-    color: rgba(255, 72, 0, 0.7);
+    color: rgba(200, 17, 54, 0.7);
     cursor: pointer;
     transition: all 1s;
     margin-right: 15vw;
 
     &:hover {
-      color: rgba(255, 72, 0, 0.9);
+      color: rgba(200, 17, 54, 0.9);
       transform: rotate(90deg);
     }
   }

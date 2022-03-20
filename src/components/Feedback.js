@@ -63,6 +63,10 @@ const Wrapper = styled.section`
     box-shadow: none;
   }
 
+  @media only screen and (max-width: 500px) {
+    transform: translateX(-10%);
+  }
+
   section {
     background: lightgrey;
     min-width: 30vw;
@@ -72,6 +76,14 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 1250px) {
+      border-radius: 2.5rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+      border-radius: 1rem;
+    }
   }
 
   .container {
@@ -84,6 +96,10 @@ const Wrapper = styled.section`
     min-width: 25vw;
     border-radius: 5rem;
     border: none;
+
+    @media only screen and (max-width: 700px) {
+      width: 6vw;
+    }
   }
 
   .short-input {
@@ -108,10 +124,22 @@ const Wrapper = styled.section`
       background-color: rgba(0, 0, 0, 0.1);
       color: white;
     }
+
+    @media only screen and (max-width: 800px) {
+      padding: 0.3rem 1.1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 0.2rem 0.8rem;
+    }
   }
 
   .title {
     color: rgba(0, 0, 0, 0.7);
     margin-top: 0.5rem;
+    text-align: center;
+    @media only screen and (max-width: 1000px) {
+      font-size: 0.7rem;
+    }
   }
 `;
