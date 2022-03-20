@@ -106,14 +106,14 @@ const SidebarContainer = styled.div`
   a {
     text-transform: capitalize;
     font-size: 3.5rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     transition: all 1s;
     width: 100%;
 
     &:hover {
       color: rgba(255, 72, 0, 0.7);
-      padding-left: 1.5rem;
+      padding-left: 1rem;
     }
   }
 `;
