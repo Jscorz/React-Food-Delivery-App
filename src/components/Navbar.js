@@ -1,12 +1,14 @@
 import React, { useState, useRef } from 'react';
 import '../index.css';
 import styled from 'styled-components';
+import { useSidebarContext } from '../context/Context';
 import { FaBars, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import links from '../data/navbarData';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const { isSidebarOpen, openSidebar } = useSidebarContext();
   return (
     <Wrapper>
       <section className='section'>
@@ -43,7 +45,7 @@ const Navbar = () => {
             </div>
           </form>
           <button className='toggle'>
-            <FaBars className='toggle-icon' />
+            <FaBars className='toggle-icon' onClick={openSidebar} />
           </button>
         </div>
       </section>

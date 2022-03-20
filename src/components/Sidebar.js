@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { useSidebarContext } from '../context/Context';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 import links from '../data/navbarData';
@@ -7,7 +8,8 @@ import styled from 'styled-components';
 import logo from '../assets/logo.png';
 
 const Sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  //   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const { isSidebarOpen, closeSidebar } = useSidebarContext();
   return (
     <SidebarContainer>
       <aside
@@ -15,11 +17,7 @@ const Sidebar = () => {
       >
         <div className='sidebar-header'>
           <img src={logo} className='logo' alt='meals 2 u' />
-          <button
-            className='close-btn'
-            type='button'
-            onClick={() => setIsSidebarOpen(false)}
-          >
+          <button className='close-btn' type='button' onClick={closeSidebar}>
             <FaTimes />
           </button>
         </div>
@@ -30,9 +28,7 @@ const Sidebar = () => {
               return (
                 <li key={id}>
                   <Link to={`/{text}`}></Link>
-                  <a href={url} onClick={() => setIsSidebarOpen(false)}>
-                    {text}
-                  </a>
+                  <a href={url}>{text}</a>
                 </li>
               );
             })}
