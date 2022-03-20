@@ -59,6 +59,10 @@ const Wrapper = styled.section`
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5rem;
 
+  @media only screen and (max-width: 1250px) {
+    box-shadow: none;
+  }
+
   section {
     background: lightgrey;
     min-width: 30vw;
@@ -84,6 +88,10 @@ const Wrapper = styled.section`
 
   .short-input {
     min-width: 12.5vw;
+
+    @media only screen and (max-width: 1250px) {
+      max-width: 12.5vw;
+    }
   }
 
   button {

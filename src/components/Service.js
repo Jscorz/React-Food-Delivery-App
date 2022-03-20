@@ -74,11 +74,11 @@ const Wrapper = styled.section`
     margin-top: 2%;
     color: rgba(0, 0, 0, 0.65);
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1200px) {
       font-size: 3rem;
     }
     @media only screen and (max-width: 800px) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     @media only screen and (max-width: 500px) {
       font-size: 2rem;

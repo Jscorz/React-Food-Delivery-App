@@ -35,6 +35,10 @@ const Wrapper = styled.section`
   border-radius: 5rem;
   margin-top: 5rem;
 
+  @media only screen and (max-width: 1250px) {
+    box-shadow: none;
+  }
+
   section {
     background: lightgrey;
     min-width: 30vw;
@@ -43,6 +47,14 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 800px) {
+      min-height: 10vh;
+    }
+    @media only screen and (max-width: 600px) {
+      border-radius: 1rem;
+      min-height: 2rem;
+    }
   }
 
   a {
@@ -59,10 +71,21 @@ const Wrapper = styled.section`
   }
 
   .email {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2rem;
     white-space: nowrap;
     margin-right: 1rem;
+
+    @media only screen and (max-width: 1250px) {
+      font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 0.7rem;
+    }
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   button {
@@ -72,5 +95,14 @@ const Wrapper = styled.section`
     border: none;
     cursor: pointer;
     margin-bottom: -1rem;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem;
+    }
   }
 `;
