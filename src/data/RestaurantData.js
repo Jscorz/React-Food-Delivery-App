@@ -8,15 +8,17 @@ export const RestaurantData = [
     id: 1,
     // img: pizza,
     name: 'Scorza Pizzeria',
-    description: 'homemade style',
-    price: 15.25,
+    miles: '1.7 mi',
+    time: '21 min',
+    fee: '$5.99',
   },
   {
     id: 2,
     // img: sushi,
     name: 'Pho Le',
-    description: 'many varieties',
-    price: 10.25,
+    miles: '0.9 mi',
+    time: '13 min',
+    fee: '$7.99',
   },
 ];
 

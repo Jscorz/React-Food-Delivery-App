@@ -8,15 +8,17 @@ export const RestaurantDataTwo = [
     id: 1,
     // img: pizza,
     name: 'Burger Spot',
-    description: 'homemade style',
-    price: 15.25,
+    miles: '0.2 mi',
+    time: '5 min',
+    fee: '$4.99',
   },
   {
     id: 2,
     // img: sushi,
     name: 'El Rancho',
-    description: 'many varieties',
-    price: 10.25,
+    miles: '0.4 mi',
+    time: '11 min',
+    fee: '$3.99',
   },
 ];
 
