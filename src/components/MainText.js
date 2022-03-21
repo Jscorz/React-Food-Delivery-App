@@ -149,6 +149,10 @@ const Wrapper = styled.section`
     padding: 1rem 2rem;
     border-radius: 1rem;
 
+    @media only screen and (max-width: 600px) {
+      padding: .5rem 1rem;
+    }
+
     &:hover {
       transform: translateY(-3%);
     }

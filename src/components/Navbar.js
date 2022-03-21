@@ -79,7 +79,7 @@ const Wrapper = styled.section`
     }
     @media only screen and (max-width: 600px) {
       max-height: 3rem;
-      margin-left: 2rem;
+      margin-left: 0.1rem;
     }
   }
 
@@ -122,18 +122,7 @@ const Wrapper = styled.section`
       transform: translateX(-50%);
       padding: 0.2rem;
     }
-    // @media only screen and (max-width: 500px) {
-    //   max-width: 20vw;
-    //   position: relative;
-    //   transform: translateX(-20%);
-    //   padding: 0.2rem;
-    // }
-    // @media only screen and (max-width: 450px) {
-    //   max-width: 15vw;
-    //   position: relative;
-    //   transform: translateX(-10%);
-    //   padding: 0.2rem;
-    // }
+
     @media only screen and (max-width: 900px) {
       visibility: hidden;
     }
@@ -228,22 +217,23 @@ const Wrapper = styled.section`
       border: 2px solid rgba(200, 17, 54, 0.9);
     }
 
-    @media only screen and (max-width: 600px) {
-      margin-right: 2rem;
+    @media only screen and (max-width: 1000px) {
+      padding: 0.3rem;
+      transform: translateX(-150%);
     }
-
+    @media only screen and (max-width: 800px) {
+      transform: translateX(-200%);
+    }
     @media only screen and (max-width: 750px) {
       padding: 0.3rem;
       transform: translateX(-100%);
     }
 
-    @media only screen and (min-width: 800px) {
-      padding: 0.3rem;
-      transform: translateX(-150%);
+    @media only screen and (max-width: 600px) {
+      margin-right: 20%;
     }
-
-    @media only screen and (min-width: 1000px) {
-      transform: translateX(-200%);
+    @media only screen and (max-width: 450px) {
+      margin-right: 25%;
     }
 
     @media only screen and (min-width: 1200px) {
