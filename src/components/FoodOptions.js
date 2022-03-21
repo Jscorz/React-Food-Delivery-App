@@ -199,14 +199,14 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
   .filled {
 color: rgba(255, 72, 0, 0.8);
-background-color: rgba(0, 0, 0, 0.7);
+background-color: rgba(0, 0, 0, 0.6);
 border-radius: 50%;
 margin-left:.5rem;
 
   }
 
   .hollow {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.6);
     background-color: white;
     border-radius: 50%;
     margin-right: .5rem;

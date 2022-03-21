@@ -46,6 +46,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
   }
+
   article {
     background-color: rgba(251, 86, 48, 0.8);
     padding: 0.2 1.25rem;
@@ -74,7 +75,10 @@ const Wrapper = styled.section`
 
       @media only screen and (max-width: 700px) {
         width: 22vw;
+        background: transparent;
+        box-shadow: none;
       }
+
   }
 
   .bike {
