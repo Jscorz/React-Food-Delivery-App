@@ -184,12 +184,20 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   .price {
-    color: rgba(255, 0, 0, 0.801);
+    color: rgba(255, 72, 0, 0.7);
       font-weight: 500;
+
+      @media only screen and (max-width: 700px) {
+display: none;
+      }
   }
 
   .btn {
     font-size: 3rem;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 2rem;
+       }
 
     &-container {
       display: flex:
@@ -203,6 +211,10 @@ background-color: rgba(0, 0, 0, 0.6);
 border-radius: 50%;
 margin-left:.5rem;
 
+@media only screen and (max-width: 700px) {
+margin-left: 0;
+ }
+
   }
 
   .hollow {
@@ -210,6 +222,10 @@ margin-left:.5rem;
     background-color: white;
     border-radius: 50%;
     margin-right: .5rem;
+
+    @media only screen and (max-width: 700px) {
+      margin-right: 0;
+     }
   }
 `;
 
