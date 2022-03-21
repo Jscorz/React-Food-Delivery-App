@@ -153,6 +153,7 @@ const Wrapper = styled.section`
   }
 
   .card-container {
+    max-width: 30vw;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -161,6 +162,7 @@ const Wrapper = styled.section`
     margin-top: 10vh;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
+    border-radius: 0.5rem;
 
     &:hover {
       transform: scale(1.05);
@@ -168,6 +170,7 @@ const Wrapper = styled.section`
   }
 
   .card-container-2 {
+    max-width: 30vw;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -176,6 +179,7 @@ const Wrapper = styled.section`
     margin-left: 15vw;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
+    border-radius: 0.5rem;
 
     &:hover {
       transform: scale(1.05);
@@ -188,10 +192,15 @@ const Wrapper = styled.section`
   }
 
   img {
-    min-width: 20vw;
+    min-width: 30vw;
     max-height: 20vh;
     object-fit: cover;
     display: block;
+    border-radius: 0.5rem;
+
+    @media only screen and (max-width: 1200px) {
+      max-width: 30vw;
+    }
   }
 
   .text-container {
