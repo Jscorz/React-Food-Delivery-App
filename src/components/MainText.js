@@ -116,7 +116,7 @@ const Wrapper = styled.section`
       }
       @media only screen and (max-width: 500px) {
         font-size: 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 20%;
        }
   }
 
@@ -140,6 +140,10 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     transition: all .2s;
+
+    @media only screen and (max-width: 500px) {
+      margin-top: 20%;
+     }
   }
 
   .order {
