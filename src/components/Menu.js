@@ -84,9 +84,9 @@ const Wrapper = styled.section`
 
   .card {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 500;
 
-    color: rgba(0, 0, 0, 0.65);
+    color: rgba(0, 0, 0, 0.55);
     padding: 3rem;
 
     display: flex;
@@ -154,6 +154,7 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 550px) {
       padding: 0.5rem 1rem;
+      border-radius: 0.2rem;
       font-weight: 400;
     }
 
