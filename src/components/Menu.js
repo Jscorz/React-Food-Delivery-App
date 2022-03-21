@@ -84,7 +84,7 @@ const Wrapper = styled.section`
 
   .card {
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 600;
 
     color: rgba(0, 0, 0, 0.65);
     padding: 3rem;
@@ -94,6 +94,14 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
 
   .button {
@@ -107,6 +115,10 @@ const Wrapper = styled.section`
     cursor: pointer;
     transition: all 0.2s;
     transform: translateY(35%);
+
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
 
     &:hover {
       transform: translateY(37%);
@@ -138,6 +150,12 @@ const Wrapper = styled.section`
     border: none;
     padding: 1rem 2rem;
     border-radius: 1rem;
+    white-space: nowrap;
+
+    @media only screen and (max-width: 550px) {
+      padding: 0.5rem 1rem;
+      font-weight: 400;
+    }
 
     &:hover {
       transform: translateY(-3%);
