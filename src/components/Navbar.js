@@ -31,11 +31,15 @@ const Navbar = () => {
           </div>
           <form>
             <div className='form-control'>
-              <button>
-                <FaShoppingCart className='cart' />
-                <div className='cart-total'>6</div>
-              </button>
-              <FaSearch className='search-icon' />
+              <Link to='/shop'>
+                <button>
+                  <FaShoppingCart className='cart' />
+                  <div className='cart-total'>6</div>
+                </button>
+              </Link>
+              <Link to='/shop'>
+                <FaSearch className='search-icon' />
+              </Link>
               <input
                 type='text'
                 name='text'
@@ -177,7 +181,7 @@ const Wrapper = styled.section`
       left: 50%;
       padding: 0.5rem;
       border-radius: 60%;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
       cursor: pointer;
 
       @media only screen and (max-width: 800px) {

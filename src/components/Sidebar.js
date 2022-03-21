@@ -84,7 +84,7 @@ const SidebarContainer = styled.div`
     background-color: transparent;
     color: rgba(200, 17, 54, 0.7);
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.8s;
     margin-right: 15vw;
 
     &:hover {

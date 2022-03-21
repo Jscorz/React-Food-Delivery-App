@@ -78,6 +78,9 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: space-between;
     text-align: center;
+
+
+
 }
 
   .container {
@@ -107,6 +110,7 @@ transform: translateX(-50%);
   }
 
   @media only screen and (max-width: 800px) {
+    justify-content: center;
     transform: translateX(0);
 
   }
@@ -171,7 +175,7 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
           }
 
           @media only screen and (max-width: 500px) {
-            font-size: .9rem;
+            font-size: .7rem;
             margin-bottom: .5rem;
            }
       }
@@ -182,7 +186,8 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
 
     @media only screen and (max-width: 700px) {
-        font-size: .7rem;
+        font-size: .5rem;
+        padding-bottom: 1rem;
        }
   }
 
@@ -214,7 +219,7 @@ background-color: rgba(0, 0, 0, 0.6);
 border-radius: 50%;
 margin-left:.5rem;
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) {
 margin-left: 0;
  }
 
@@ -226,7 +231,7 @@ margin-left: 0;
     border-radius: 50%;
     margin-right: .5rem;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 1100px) {
       margin-right: 0;
      }
   }
