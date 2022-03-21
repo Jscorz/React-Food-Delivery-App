@@ -105,6 +105,7 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 600px) {
       font-size: 1.2rem;
+      margin-bottom: -0.2rem;
     }
   }
 `;

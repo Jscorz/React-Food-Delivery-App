@@ -107,7 +107,7 @@ const SidebarContainer = styled.div`
   a {
     text-transform: capitalize;
     font-size: 3.5rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
     text-decoration: none;
     transition: all 1s;
     width: 100%;

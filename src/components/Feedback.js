@@ -99,6 +99,7 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 700px) {
       width: 6vw;
+      font-size: 0.6rem;
     }
   }
 
