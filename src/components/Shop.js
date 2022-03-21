@@ -242,6 +242,14 @@ const Wrapper = styled.section`
   h3 {
     color: rgba(0, 0, 0, 0.8);
     white-space: nowrap;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 0.8rem;
+    }
   }
 
   h4 {
@@ -264,6 +272,20 @@ const Wrapper = styled.section`
     align-self: flex-end;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+      transform: translate(-50%, 60%);
+    }
+
+    @media only screen and (max-width: 500px) {
+      transform: translate(-60%, 60%);
+    }
+    @media only screen and (max-width: 450px) {
+      transform: translate(-65%, 60%);
+    }
+    @media only screen and (max-width: 400px) {
+      transform: translate(-70%, 60%);
+    }
   }
 
   .arrow {
