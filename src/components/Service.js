@@ -48,8 +48,13 @@ const Wrapper = styled.section`
       border-radius: 5rem;
 
       display: grid;
+
       grid-template-columns: 70% 1fr;
       transition: all 0.2s;
+
+      @media only screen and (max-width: 600px) {
+        justify-items: center;
+      }
     }
   }
 

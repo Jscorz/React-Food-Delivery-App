@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { AiTwotoneMail } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
 
 import '../index.css';
 import styled from 'styled-components';
@@ -15,7 +15,7 @@ const EmailCard = () => {
         >
           <h1 className='email'>Send Us an email</h1>
           <button>
-            <AiTwotoneMail />
+            <AiOutlineMail />
           </button>
         </a>
       </section>
@@ -56,6 +56,8 @@ const Wrapper = styled.section`
       min-height: 5vh;
       min-width: 5vw;
       padding: 0.5rem;
+
+      margin-bottom: 20vh;
     }
   }
 
@@ -96,7 +98,7 @@ const Wrapper = styled.section`
     background: transparent;
     border: none;
     cursor: pointer;
-    margin-bottom: -1rem;
+    margin-bottom: -0.8rem;
 
     @media only screen and (max-width: 800px) {
       font-size: 1.5rem;
@@ -105,7 +107,7 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 600px) {
       font-size: 1.2rem;
-      margin-bottom: -0.2rem;
+      margin-bottom: -0.3rem;
     }
   }
 `;
