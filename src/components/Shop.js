@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import '../index.css';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import FoodOptions from './FoodOptions';
+import RestaurantData from '../data/RestaurantData';
+import RestaurantDataTwo from '../data/RestaurantDataTwo';
 import tacobell from '../assets/tacobell.jpg';
 import pizzahut from '../assets/pizzahut.jpg';
 import pho from '../assets/pho.jpg';
@@ -168,8 +168,10 @@ const Wrapper = styled.section`
     transition: all 0.3s;
     border-radius: 0.5rem;
 
-    &:hover {
-      transform: scale(1.05);
+    @media only screen and (min-width: 800px) {
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     @media only screen and (max-width: 550px) {
@@ -191,8 +193,10 @@ const Wrapper = styled.section`
     transition: all 0.3s;
     border-radius: 0.5rem;
 
-    &:hover {
-      transform: scale(1.05);
+    @media only screen and (min-width: 800px) {
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     @media only screen and (max-width: 550px) {
@@ -297,17 +301,20 @@ const Wrapper = styled.section`
     cursor: pointer;
 
     @media only screen and (max-width: 600px) {
-      transform: translate(-50%, 60%);
+      transform: translate(-45%, 60%);
     }
 
+    @media only screen and (max-width: 550px) {
+      transform: translate(-30%, 60%);
+    }
     @media only screen and (max-width: 500px) {
-      transform: translate(-60%, 60%);
+      transform: translate(-40%, 60%);
     }
     @media only screen and (max-width: 450px) {
-      transform: translate(-65%, 60%);
+      transform: translate(-45%, 60%);
     }
     @media only screen and (max-width: 400px) {
-      transform: translate(-70%, 60%);
+      transform: translate(-55%, 60%);
     }
   }
 
