@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CardData from '../data/CardData';
 import CardDataTwo from '../data/CardDataTwo';
 import { Link } from 'react-router-dom';
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
 const FoodOptions = () => {
   return (
@@ -20,6 +21,10 @@ const FoodOptions = () => {
                   <h2>{item.name}</h2>
                   <h3>{item.description}</h3>
                   <p className='price'>${item.price}</p>
+                  <div className='btn-container'>
+                    <BsArrowRightCircle className='btn hollow' />
+                    <BsArrowLeftCircle className='btn filled' />
+                  </div>
                 </div>
               </section>
             </Link>
@@ -39,6 +44,10 @@ const FoodOptions = () => {
                   <h2>{item.name}</h2>
                   <h3>{item.description}</h3>
                   <p className='price'>${item.price}</p>
+                  <div className='btn-container'>
+                    <BsArrowRightCircle className='btn hollow' />
+                    <BsArrowLeftCircle className='btn filled' />
+                  </div>
                 </div>
               </section>
             </Link>
@@ -177,6 +186,30 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   .price {
     color: rgba(255, 0, 0, 0.801);
       font-weight: 500;
+  }
+
+  .btn {
+    font-size: 3rem;
+
+    &-container {
+      display: flex:
+      justify-content: space-between;
+    }
+  }
+
+  .filled {
+color: rgba(255, 72, 0, 0.8);
+background-color: rgba(0, 0, 0, 0.8);
+border-radius: 50%;
+margin-left:.5rem;
+
+  }
+
+  .hollow {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: white;
+    border-radius: 50%;
+    margin-right: .5rem;
   }
 `;
 
