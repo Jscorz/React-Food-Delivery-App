@@ -7,14 +7,14 @@ export const RestaurantDataTwo = [
   {
     id: 1,
     // img: pizza,
-    name: 'pizza',
+    name: 'Burger Spot',
     description: 'homemade style',
     price: 15.25,
   },
   {
     id: 2,
     // img: sushi,
-    name: 'sushi',
+    name: 'El Rancho',
     description: 'many varieties',
     price: 10.25,
   },

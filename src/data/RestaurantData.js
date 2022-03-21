@@ -7,14 +7,14 @@ export const RestaurantData = [
   {
     id: 1,
     // img: pizza,
-    name: 'pizza',
+    name: 'Scorza Pizzeria',
     description: 'homemade style',
     price: 15.25,
   },
   {
     id: 2,
     // img: sushi,
-    name: 'sushi',
+    name: 'Pho Le',
     description: 'many varieties',
     price: 10.25,
   },
