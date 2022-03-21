@@ -150,6 +150,10 @@ const Wrapper = styled.section`
     justify-content: flex-end;
     align-items: center;
     transition: all 0.2s;
+
+    @media only screen and (max-width: 550px) {
+      justify-content: center;
+    }
   }
 
   .card-container {
@@ -167,6 +171,12 @@ const Wrapper = styled.section`
     &:hover {
       transform: scale(1.05);
     }
+
+    @media only screen and (max-width: 550px) {
+      min-width: 40vw;
+      margin-left: 5vw;
+      margin-top: 10%;
+    }
   }
 
   .card-container-2 {
@@ -183,6 +193,14 @@ const Wrapper = styled.section`
 
     &:hover {
       transform: scale(1.05);
+    }
+
+    @media only screen and (max-width: 550px) {
+      min-width: 40vw;
+      margin-left: 25vw;
+      margin-top: 10%;
+
+      transform: translateY(-25%);
     }
   }
 
@@ -205,6 +223,11 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 1200px) {
       max-width: 30vw;
+    }
+
+    @media only screen and (max-width: 550px) {
+      min-width: 40vw;
+      height: 30vh;
     }
   }
 
