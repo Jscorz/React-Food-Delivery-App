@@ -187,8 +187,13 @@ const Wrapper = styled.section`
   }
 
   .card-info-container {
+    min-width: 30vw;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1200px) {
+      max-width: 10vw;
+    }
   }
 
   img {
@@ -208,6 +213,10 @@ const Wrapper = styled.section`
     padding: 1rem 2rem 2rem 1rem;
     flex-direction: column;
     justify-content: space-around;
+
+    @media only screen and (max-width: 1200px) {
+      max-width: 5vw;
+    }
   }
 
   .column-1 {
@@ -233,6 +242,14 @@ const Wrapper = styled.section`
   h3 {
     color: rgba(0, 0, 0, 0.8);
     white-space: nowrap;
+  }
+
+  h4 {
+    color: rgba(0, 0, 0, 0.7);
+
+    @media only screen and (max-width: 1200px) {
+      visibility: hidden;
+    }
   }
 
   h5 {
