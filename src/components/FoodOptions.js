@@ -114,9 +114,10 @@ transform: translateX(-50%);
   @media only screen and (max-width: 700px) {
     transform: translateX(0);
     padding: .5rem 1.5rem;
+    border-radius: .5rem;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.03);
     }
 
   }
@@ -154,7 +155,7 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   h2 {
-      color: rgba(0, 0, 0, 0.8);
+      color: rgba(0, 0, 0, 0.7);
       margin-top: 1rem;
 
       @media only screen and (max-width: 1200px) {
@@ -166,18 +167,20 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
         @media only screen and (max-width: 700px) {
            font-size: 1.2rem;
-           margin-bottom: 1.5rem;
+           margin-bottom: .5rem;
           }
 
           @media only screen and (max-width: 500px) {
             font-size: .9rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: .5rem;
            }
       }
   }
    
   h3 {
     color: rgba(0, 0, 0, 0.6);
+
+
     @media only screen and (max-width: 700px) {
         font-size: .7rem;
        }
