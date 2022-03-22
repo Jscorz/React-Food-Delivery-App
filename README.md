@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Meals 2 U
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- I had discovered CSS grid and wanted to work on a bigger project based on it. So now we have Luxur, a website for those who those who prefer a premium ride -->
 
-## Available Scripts
+<!-- **Link to project: [Live-demo]https://jscorz-luxur.netlify.app** -->
 
-In the project directory, you can run:
+<!-- <img src="/images/MOL-screenshot.png">
+![alt text](https://github.com/Jscorz/MethodOfLociSim/blob/MOL-screenshot.png?raw=true) -->
 
-### `npm start`
+![meals2u](src/assets/meals2u1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ![meals2u2](/img/meals2u2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![meals2u3](/img/meals2u3.png)
 
-### `npm test`
+![meals2u4](/img/meals2u4.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![meals2u5](/img/meals2u5.png)
 
-### `npm run build`
+![meals2u6](/img/meals2u7.png) -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **How It's Made:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+**Tech used:** HTML, CSS, Javascript, React JS, Styled Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- I began building out the markup of the page making the design elements similar to other websites I enjoyed the design of. I decided how many sections of the site I would need and laid out a starter template for the grid container and applied it so. Then i started building out more grid layouts within each section starting with the header. I used various svg's for the icons and images from free-hosting sites. I used grid to rest another image across an already-existing image as it's made easier with CSS grid. I will add some Javascript functionality to the website at a later date. -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Lesson's learned:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- The main takeaway I had for this project was definitely layout-based. I got much more comfortable with the way that CSS grid and its properties work. I also learned to layover an image over an image without having to use absolute positioning. -->
 
-## Learn More
+## **Optimizations:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- Not much has been optimized past getting the layout extremely responsive. I will add Javascript functionality to it later. -->
