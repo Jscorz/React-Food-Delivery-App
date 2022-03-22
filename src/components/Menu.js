@@ -43,7 +43,11 @@ const Wrapper = styled.section`
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-radius: 8%;
+    border-radius: 5rem;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
 
     &-second {
       margin: 2rem;
@@ -58,6 +62,10 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: 70% 1fr;
       transition: all 0.2s;
+
+      @media only screen and (max-width: 550px) {
+        border-radius: 1rem;
+      }
     }
   }
 
@@ -70,6 +78,10 @@ const Wrapper = styled.section`
     justify-content: flex-end;
     align-items: center;
     transition: all 0.2s;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
   }
 
   .card {
@@ -80,6 +92,10 @@ const Wrapper = styled.section`
 
     transform: translateX(20%);
     text-transform: capitalize;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
   }
 
   .card {

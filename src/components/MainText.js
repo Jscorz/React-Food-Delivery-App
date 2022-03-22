@@ -42,9 +42,13 @@ const Wrapper = styled.section`
   section {
     height: 100%;
     background-color: white;
-    border-radius: 8%;
+    border-radius: 5rem;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
   }
 
   article {
@@ -159,6 +163,7 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 600px) {
       padding: .5rem 1rem;
+      border-radius: .5rem;
     }
 
     &:hover {

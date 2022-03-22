@@ -63,13 +63,21 @@ const Wrapper = styled.section`
   grid-column: 2 / 4;
   align-items: space-between;
   background-color: lightgrey;
-  border-radius: 5rem 0 0 5rem;
+  border-radius: 5rem;
+
+  @media only screen and (max-width: 550px) {
+    border-radius: 1rem;
+  }
 
   .one {
     background: linear-gradient(rgba(255, 72, 0, 0.704), rgba(255, 72, 0, 0.204));
       grid-column 2 / 3;
     grid-row: 1 / -1;
     border-radius: 5rem;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
 
   }
 
@@ -78,8 +86,6 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: space-between;
     text-align: center;
-
-
 
 }
 
@@ -154,7 +160,7 @@ box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
       }
 
       @media only screen and (max-width: 1000px) {
-        max-height: 10vw;
+        max-height: 15vw;
       }
   }
 

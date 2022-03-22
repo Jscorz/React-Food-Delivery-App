@@ -71,7 +71,7 @@ const Wrapper = styled.section`
     background: lightgrey;
     min-width: 30vw;
     min-height: 30vh;
-    border-radius: 5rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -82,7 +82,7 @@ const Wrapper = styled.section`
     }
 
     @media only screen and (max-width: 700px) {
-      border-radius: 1rem;
+      border-radius: 0.5rem;
     }
   }
 
@@ -94,12 +94,13 @@ const Wrapper = styled.section`
   input {
     padding: 0.5rem;
     min-width: 25vw;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
     border: none;
 
     @media only screen and (max-width: 700px) {
       width: 6vw;
       font-size: 0.6rem;
+      border-radius: 0.5rem;
     }
   }
 
@@ -109,6 +110,10 @@ const Wrapper = styled.section`
     @media only screen and (max-width: 1250px) {
       max-width: 12.5vw;
     }
+
+    @media only screen and (max-width: 700px) {
+      border-radius: 0.5rem;
+    }
   }
 
   button {
@@ -117,7 +122,7 @@ const Wrapper = styled.section`
     border-radius: 0.7rem;
     cursor: pointer;
     font-weight: 800;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0.5rem;
 
     &:hover {
@@ -128,6 +133,7 @@ const Wrapper = styled.section`
 
     @media only screen and (max-width: 800px) {
       padding: 0.3rem 1.1rem;
+      border-radius: 0.4rem;
     }
 
     @media only screen and (max-width: 600px) {

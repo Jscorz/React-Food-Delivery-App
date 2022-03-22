@@ -27,13 +27,17 @@ const Wrapper = styled.section`
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-radius: 8%;
+    border-radius: 5rem;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
 
     &-second {
       margin: 2rem;
       min-width: 95%;
       background-color: orange;
-      border-radius: 8%;
+      border-radius: 5rem;
 
       display: grid;
       grid-template-columns: 60% 1fr 1fr;

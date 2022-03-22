@@ -39,7 +39,11 @@ const Wrapper = styled.section`
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-radius: 8%;
+    border-radius: 5rem;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
 
     &-second {
       margin: 2rem;
@@ -54,6 +58,11 @@ const Wrapper = styled.section`
 
       @media only screen and (max-width: 600px) {
         justify-items: center;
+      }
+
+      @media only screen and (max-width: 550px) {
+        justify-items: center;
+        border-radius: 1rem;
       }
     }
   }
@@ -70,6 +79,11 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 100%;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
   }
 
   h1 {
