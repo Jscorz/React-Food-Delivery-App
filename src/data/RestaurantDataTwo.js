@@ -18,7 +18,7 @@ export const RestaurantDataTwo = [
     name: 'El Rancho',
     miles: '0.4 mi',
     time: '11 min',
-    fee: '$3.99',
+    fee: '$2.99',
   },
 ];
 
