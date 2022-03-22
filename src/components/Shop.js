@@ -17,92 +17,58 @@ const Shop = () => {
           <div className='background'>
             <div className='main-container'>
               <main className='column-1'>
-                <section className='card-container-2'>
-                  <div className='img-container'>
-                    <img src={pizzahut} alt='pizza hut' />
-                  </div>
-                  <div className='card-info-container'>
-                    <div className='text-container'>
-                      <h3>Scorza Pizzeria </h3>
-                      <div className='text-container-second'>
-                        <div className='distance-container'>
-                          <h5 className='margin-right'>| 1.7mi </h5>
-                          <h5>| 21 min</h5>
-                        </div>
-                        <h5>| $5.99 delivery fee</h5>
+                {RestaurantData.map((rest) => {
+                  return (
+                    <section className='card-container-2'>
+                      <div className='img-container'>
+                        <img src={rest.img} alt='pizza hut' />
                       </div>
-                    </div>
-                    <article className='arrow-container'>
-                      <h4>Popular Items</h4>
-                      <IoIosArrowDropupCircle className='arrow' />
-                    </article>
-                  </div>
-                </section>
-                <section className='card-container-2'>
-                  <div className='img-container'>
-                    <img src={pho} alt='pho le' />
-                  </div>
-                  <div className='card-info-container'>
-                    <div className='text-container'>
-                      <h3>Pho Le</h3>
-                      <div className='text-container-second'>
-                        <div className='distance-container'>
-                          <h5 className='margin-right'>| 0.9mi </h5>
-                          <h5>| 13 min</h5>
+                      <div className='card-info-container'>
+                        <div className='text-container'>
+                          <h3>{rest.name}</h3>
+                          <div className='text-container-second'>
+                            <div className='distance-container'>
+                              <h5 className='margin-right'>| {rest.miles}</h5>
+                              <h5>| {rest.time}</h5>
+                            </div>
+                            <h5>| {rest.fee}</h5>
+                          </div>
                         </div>
-                        <h5>| $7.99 delivery fee</h5>
+                        <article className='arrow-container'>
+                          <h4>Popular Items</h4>
+                          <IoIosArrowDropupCircle className='arrow' />
+                        </article>
                       </div>
-                    </div>
-                    <article className='arrow-container'>
-                      <h4>Popular Items</h4>
-                      <IoIosArrowDropupCircle className='arrow' />
-                    </article>
-                  </div>
-                </section>
+                    </section>
+                  );
+                })}
               </main>
               <main className='column-2'>
-                <section className='card-container'>
-                  <div className='img-container'>
-                    <img src={burger} alt='burger spot' />
-                  </div>
-                  <div className='card-info-container'>
-                    <div className='text-container'>
-                      <h3>Burger Spot</h3>
-                      <div className='text-container-second'>
-                        <div className='distance-container'>
-                          <h5 className='margin-right'>| 0.2mi </h5>
-                          <h5>| 5 min</h5>
-                        </div>
-                        <h5>| $4.99 delivery fee</h5>
+                {RestaurantDataTwo.map((rest) => {
+                  return (
+                    <section className='card-container'>
+                      <div className='img-container'>
+                        <img src={rest.img} alt='burger spot' />
                       </div>
-                    </div>
-                    <article className='arrow-container'>
-                      <h4>Popular Items</h4>
-                      <IoIosArrowDropupCircle className='arrow' />
-                    </article>
-                  </div>
-                </section>
-                <section className='card-container'>
-                  <div className='img-container'>
-                    <img src={tacobell} alt='taco bell' />
-                  </div>
-                  <div className='card-info-container'>
-                    <div className='text-container'>
-                      <h3>El Rancho</h3>
-                      <div className='text-container-second'>
-                        <div className='distance-container'>
-                          <h5 className='margin-right'>| 0.4mi </h5>
-                          <h5>| 11 min</h5>
+                      <div className='card-info-container'>
+                        <div className='text-container'>
+                          <h3>{rest.name}</h3>
+                          <div className='text-container-second'>
+                            <div className='distance-container'>
+                              <h5 className='margin-right'>| {rest.miles}</h5>
+                              <h5>| {rest.time}</h5>
+                            </div>
+                            <h5>| {rest.fee}</h5>
+                          </div>
                         </div>
-                        <h5>| $3.99 delivery fee</h5>
+                        <article className='arrow-container'>
+                          <h4>Popular Items</h4>
+                          <IoIosArrowDropupCircle className='arrow' />
+                        </article>
                       </div>
-                    </div>
-                    <article className='arrow-container'>
-                      <h4>Popular Items</h4>
-                      <IoIosArrowDropupCircle className='arrow' />
-                    </article>
-                  </div>
-                </section>
+                    </section>
+                  );
+                })}
               </main>
             </div>
           </div>
