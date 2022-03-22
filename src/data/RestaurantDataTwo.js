@@ -1,12 +1,10 @@
 import tacobell from '../assets/tacobell.jpg';
-import pizzahut from '../assets/pizzahut.jpg';
-import pho from '../assets/pho.jpg';
 import burger from '../assets/burger.jpg';
 
 export const RestaurantDataTwo = [
   {
     id: 1,
-    // img: pizza,
+    img: burger,
     name: 'Burger Spot',
     miles: '0.2 mi',
     time: '5 min',
@@ -14,7 +12,7 @@ export const RestaurantDataTwo = [
   },
   {
     id: 2,
-    // img: sushi,
+    img: tacobell,
     name: 'El Rancho',
     miles: '0.4 mi',
     time: '11 min',
