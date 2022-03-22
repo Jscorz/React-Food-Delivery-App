@@ -17,9 +17,9 @@ const Shop = () => {
           <div className='background'>
             <div className='main-container'>
               <main className='column-1'>
-                {RestaurantData.map((rest) => {
+                {RestaurantData.map((rest, index) => {
                   return (
-                    <section className='card-container-2'>
+                    <section className='card-container-2' key={index}>
                       <div className='img-container'>
                         <img src={rest.img} alt='pizza hut' />
                       </div>
@@ -44,9 +44,9 @@ const Shop = () => {
                 })}
               </main>
               <main className='column-2'>
-                {RestaurantDataTwo.map((rest) => {
+                {RestaurantDataTwo.map((rest, index) => {
                   return (
-                    <section className='card-container'>
+                    <section className='card-container' key={index}>
                       <div className='img-container'>
                         <img src={rest.img} alt='burger spot' />
                       </div>

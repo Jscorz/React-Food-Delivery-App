@@ -10,9 +10,9 @@ const FoodOptions = () => {
   return (
     <Wrapper>
       <section className='two'>
-        {CardDataTwo.map((item) => {
+        {CardDataTwo.map((item, index) => {
           return (
-            <Link to='/Shop'>
+            <Link to='/Shop' key={index}>
               <section className='card-container'>
                 <div className='container'>
                   <div className='img-background'>
@@ -33,9 +33,9 @@ const FoodOptions = () => {
       </section>
 
       <section className='one'>
-        {CardData.map((item) => {
+        {CardData.map((item, index) => {
           return (
-            <Link to='/Shop'>
+            <Link to='/Shop' key={index}>
               <section className='card-container'>
                 <div className='container'>
                   <div className='img-background'>

@@ -19,7 +19,7 @@ export const RestaurantData = [
     fee: '$7.99',
   },
   {
-    id: 1,
+    id: 3,
     img: pizzahut,
     name: 'Scorza Pizzeria',
     miles: '1.7 mi',
@@ -27,7 +27,7 @@ export const RestaurantData = [
     fee: '$5.99',
   },
   {
-    id: 2,
+    id: 4,
     img: pho,
     name: 'Pho Le',
     miles: '0.9 mi',
@@ -35,7 +35,7 @@ export const RestaurantData = [
     fee: '$7.99',
   },
   {
-    id: 1,
+    id: 5,
     img: pizzahut,
     name: 'Scorza Pizzeria',
     miles: '1.7 mi',
@@ -43,7 +43,7 @@ export const RestaurantData = [
     fee: '$5.99',
   },
   {
-    id: 2,
+    id: 6,
     img: pho,
     name: 'Pho Le',
     miles: '0.9 mi',
@@ -51,7 +51,7 @@ export const RestaurantData = [
     fee: '$7.99',
   },
   {
-    id: 1,
+    id: 7,
     img: pizzahut,
     name: 'Scorza Pizzeria',
     miles: '1.7 mi',
@@ -59,7 +59,7 @@ export const RestaurantData = [
     fee: '$5.99',
   },
   {
-    id: 2,
+    id: 8,
     img: pho,
     name: 'Pho Le',
     miles: '0.9 mi',
@@ -67,7 +67,7 @@ export const RestaurantData = [
     fee: '$7.99',
   },
   {
-    id: 1,
+    id: 9,
     img: pizzahut,
     name: 'Scorza Pizzeria',
     miles: '1.7 mi',
@@ -75,7 +75,7 @@ export const RestaurantData = [
     fee: '$5.99',
   },
   {
-    id: 2,
+    id: 10,
     img: pho,
     name: 'Pho Le',
     miles: '0.9 mi',
@@ -83,7 +83,7 @@ export const RestaurantData = [
     fee: '$7.99',
   },
   {
-    id: 1,
+    id: 11,
     img: pizzahut,
     name: 'Scorza Pizzeria',
     miles: '1.7 mi',
@@ -91,7 +91,7 @@ export const RestaurantData = [
     fee: '$5.99',
   },
   {
-    id: 2,
+    id: 12,
     img: pho,
     name: 'Pho Le',
     miles: '0.9 mi',

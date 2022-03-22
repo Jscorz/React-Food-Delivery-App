@@ -19,7 +19,7 @@ export const RestaurantDataTwo = [
     fee: '$2.99',
   },
   {
-    id: 1,
+    id: 3,
     img: burger,
     name: 'Burger Spot',
     miles: '0.2 mi',
@@ -27,7 +27,7 @@ export const RestaurantDataTwo = [
     fee: '$4.99',
   },
   {
-    id: 2,
+    id: 4,
     img: tacobell,
     name: 'El Rancho',
     miles: '0.4 mi',
@@ -35,7 +35,7 @@ export const RestaurantDataTwo = [
     fee: '$2.99',
   },
   {
-    id: 1,
+    id: 5,
     img: burger,
     name: 'Burger Spot',
     miles: '0.2 mi',
@@ -43,7 +43,7 @@ export const RestaurantDataTwo = [
     fee: '$4.99',
   },
   {
-    id: 2,
+    id: 6,
     img: tacobell,
     name: 'El Rancho',
     miles: '0.4 mi',
@@ -51,7 +51,7 @@ export const RestaurantDataTwo = [
     fee: '$2.99',
   },
   {
-    id: 1,
+    id: 7,
     img: burger,
     name: 'Burger Spot',
     miles: '0.2 mi',
@@ -59,7 +59,7 @@ export const RestaurantDataTwo = [
     fee: '$4.99',
   },
   {
-    id: 2,
+    id: 8,
     img: tacobell,
     name: 'El Rancho',
     miles: '0.4 mi',
@@ -67,7 +67,7 @@ export const RestaurantDataTwo = [
     fee: '$2.99',
   },
   {
-    id: 1,
+    id: 9,
     img: burger,
     name: 'Burger Spot',
     miles: '0.2 mi',
@@ -75,7 +75,7 @@ export const RestaurantDataTwo = [
     fee: '$4.99',
   },
   {
-    id: 2,
+    id: 10,
     img: tacobell,
     name: 'El Rancho',
     miles: '0.4 mi',
@@ -83,7 +83,7 @@ export const RestaurantDataTwo = [
     fee: '$2.99',
   },
   {
-    id: 1,
+    id: 11,
     img: burger,
     name: 'Burger Spot',
     miles: '0.2 mi',
@@ -91,7 +91,7 @@ export const RestaurantDataTwo = [
     fee: '$4.99',
   },
   {
-    id: 2,
+    id: 12,
     img: tacobell,
     name: 'El Rancho',
     miles: '0.4 mi',
