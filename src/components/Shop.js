@@ -88,7 +88,11 @@ const Wrapper = styled.section`
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-radius: 8%;
+    border-radius: 5rem;
+
+    @media only screen and (max-width: 550px) {
+      border-radius: 1rem;
+    }
 
     &-second {
       margin: 2rem;
@@ -144,6 +148,8 @@ const Wrapper = styled.section`
       min-width: 40vw;
       margin-left: 5vw;
       margin-top: 10%;
+
+      transform: translateY(20%);
     }
   }
 
@@ -170,7 +176,7 @@ const Wrapper = styled.section`
       margin-left: 25vw;
       margin-top: 10%;
 
-      transform: translateY(-25%);
+      transform: translateY(-12%);
     }
   }
 
