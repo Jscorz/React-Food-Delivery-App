@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect } from 'react';
 import '../index.css';
 import styled from 'styled-components';
 import CardData from '../data/CardData';
@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
 const FoodOptions = () => {
+  useEffect(() => {}, []);
+
   return (
     <Wrapper>
       <section className='two'>
