@@ -181,7 +181,7 @@ const Wrapper = styled.section`
       left: 50%;
       padding: 0.5rem;
       border-radius: 60%;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.2);
       cursor: pointer;
 
       @media only screen and (max-width: 800px) {
