@@ -98,6 +98,7 @@ transform: translateX(-50%);
  min-width: 12vw;
  padding: 1rem;
  margin-top: 4vh;
+ margin-bottom: 2rem;
  border-radius: 2rem;
 
  display: flex;
@@ -216,8 +217,12 @@ display: none;
        }
 
     &-container {
+      padding: 2vh 0;
       display: flex:
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-self: center;
+      align-items: flex-end;
     }
   }
 

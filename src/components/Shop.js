@@ -273,20 +273,31 @@ const Wrapper = styled.section`
     cursor: pointer;
 
     @media only screen and (max-width: 600px) {
-      transform: translate(-45%, 60%);
+      // transform: translate(-45%, 60%);
+      align-self: flex-end;
     }
 
     @media only screen and (max-width: 550px) {
-      transform: translate(-30%, 60%);
+      // transform: translate(-30%, 60%);
+      align-self: flex-end;
     }
     @media only screen and (max-width: 500px) {
-      transform: translate(-40%, 60%);
+      // transform: translate(-40%, 60%);
     }
     @media only screen and (max-width: 450px) {
       transform: translate(-45%, 60%);
     }
     @media only screen and (max-width: 400px) {
-      transform: translate(-55%, 60%);
+      transform: translate(-50%, 60%);
+    }
+    @media only screen and (max-width: 385px) {
+      transform: translate(-51%, 60%);
+    }
+    @media only screen and (max-width: 375px) {
+      transform: translate(-52%, 60%);
+    }
+    @media only screen and (max-width: 350px) {
+      transform: translate(-57%, 60%);
     }
   }
 
