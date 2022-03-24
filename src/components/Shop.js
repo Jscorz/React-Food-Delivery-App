@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect } from 'react';
 import '../index.css';
 import styled from 'styled-components';
 import RestaurantData from '../data/RestaurantData';
