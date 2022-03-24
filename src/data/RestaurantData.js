@@ -5,6 +5,11 @@ import burgerking from '../assets/burgerking.jpg';
 import hotdog from '../assets/hotdog.jpg';
 import santiagos from '../assets/santiagos.jpg';
 import fudds from '../assets/fudds.jpg';
+import melt from '../assets/melt.jpg';
+import dennys from '../assets/dennys.jpg';
+import arbys from '../assets/arbys.jpg';
+import ljsilvers from '../assets/ljsilvers.jpg';
+import chilis from '../assets/chilis.jpg';
 
 export const RestaurantData = [
   {
@@ -65,42 +70,42 @@ export const RestaurantData = [
   },
   {
     id: 8,
-    img: pho,
-    name: 'Pho Le',
-    miles: '0.9 mi',
-    time: '13 min',
-    fee: '$7.99',
+    img: melt,
+    name: 'The Meltdown',
+    miles: '2.9 mi',
+    time: '23 min',
+    fee: '$1.99',
   },
   {
     id: 9,
-    img: chinese,
-    name: 'Scorza Pizzeria',
-    miles: '1.7 mi',
-    time: '21 min',
+    img: dennys,
+    name: `Denny's`,
+    miles: '0.4 mi',
+    time: '7 min',
     fee: '$5.99',
   },
   {
     id: 10,
-    img: pho,
-    name: 'Pho Le',
+    img: arbys,
+    name: `Arby's`,
     miles: '0.9 mi',
-    time: '13 min',
-    fee: '$7.99',
+    time: '9 min',
+    fee: '$3.99',
   },
   {
     id: 11,
-    img: chinese,
-    name: 'Scorza Pizzeria',
-    miles: '1.7 mi',
-    time: '21 min',
+    img: ljsilvers,
+    name: 'Long John Silvers',
+    miles: '1.1 mi',
+    time: '12 min',
     fee: '$5.99',
   },
   {
     id: 12,
-    img: pho,
-    name: 'Pho Le',
-    miles: '0.9 mi',
-    time: '13 min',
+    img: chilis,
+    name: `Chili's`,
+    miles: '2.9 mi',
+    time: '17 min',
     fee: '$7.99',
   },
 ];
