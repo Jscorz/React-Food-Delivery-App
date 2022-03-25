@@ -20,7 +20,7 @@ const Shop = () => {
               <main className='column-1'>
                 {RestaurantData.map((rest, index) => {
                   return (
-                    <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                    <ScrollAnimation animateIn='fadeIn' animateOut='fade'>
                       <section className='card-container-2' key={index}>
                         <div className='img-container'>
                           <img src={rest.img} alt='pizza hut' />
@@ -49,7 +49,7 @@ const Shop = () => {
               <main className='column-2'>
                 {RestaurantDataTwo.map((rest, index) => {
                   return (
-                    <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                    <ScrollAnimation animateIn='fadeIn' animateOut='fade'>
                       <section className='card-container' key={index}>
                         <div className='img-container'>
                           <img src={rest.img} alt='burger spot' />

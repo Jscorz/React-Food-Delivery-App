@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../index.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 import styled from 'styled-components';
 import CardData from '../data/CardData';
 import CardDataTwo from '../data/CardDataTwo';
