@@ -28,8 +28,8 @@ This was a fun site to build with lots of things to be learned design-wise as I 
 
 ---
 
-<!-- ## **Optimizations:**
+## **Optimizations:**
 
-will add more info at the end of the build.
+Initially when I built the design and layout of this application, I hardcoded data for the different restaurant cards in the cards' component file. Before I added more restaurants, I added all the data to a seperate file, which I imported into the card component to iterate over resulting in cleaner code with less overall lines. All of the high quality images for the food have been compressed down quite a bit depending on the original size of the photos to optimize loading times.
 
---- -->
+---
