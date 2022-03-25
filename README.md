@@ -1,6 +1,6 @@
-# Meals 2 U - Food Delivery Application
+# Meals 2 U | Food Delivery Application
 
-I decided to build a food delivery app with React because I thought it would be interesting and have some design elements to practice my skills with React JS. Here are some pictures below as well as more info.
+I decided to build a food delivery app with React JS because I thought it would be interesting and have some design elements to practice my skills with React JS instead of vanilla Javascript. Here are some pictures below as well as more info.
 
 **Link to project: [Live-demo]https://meals2u.netlify.app**
 
