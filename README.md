@@ -12,7 +12,7 @@ I decided to build a food delivery app with React JS because I thought it would 
 
 ## **How It's Made:**
 
-I worked on building out the design of the site first. I built out the individual pages with React JS and React-Router-Dom to route between them. Then I utilized styled components to write the CSS for each component within that indivdual file at the bottom. This helped to keep the code more organized and easier to locate styling for different parts of the user interface. On the shop page, I initially built out the card components to display restaurants hard-coded in one file, but later refactored it by seperating data to a different file and mapping over the data to display cards dynamically. I used media queries in plenty of spots to help with the responsiveness so the site looks good across multiple devices.
+I worked on building out the design of the site first. I built out the individual pages with React JS and React-Router-Dom to route between them. Then I utilized styled components to write the CSS for each component within that indivdual file at the bottom. This helped to keep the code more organized and easier to locate styling for different parts of the user interface. On the shop page, I initially built out the card components to display restaurants hard-coded in one file, but later refactored it by seperating data to a different file and iterating over the data to display the cards dynamically. I used media queries in plenty of spots to help with the responsiveness so that the site looks good across multiple devices.
 
 ---
 
