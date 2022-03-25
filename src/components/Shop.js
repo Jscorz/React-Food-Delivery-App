@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../index.css';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 import RestaurantData from '../data/RestaurantData';
 import RestaurantDataTwo from '../data/RestaurantDataTwo';
 import tacobell from '../assets/tacobell.jpg';
@@ -19,54 +20,58 @@ const Shop = () => {
               <main className='column-1'>
                 {RestaurantData.map((rest, index) => {
                   return (
-                    <section className='card-container-2' key={index}>
-                      <div className='img-container'>
-                        <img src={rest.img} alt='pizza hut' />
-                      </div>
-                      <div className='card-info-container'>
-                        <div className='text-container'>
-                          <h3>{rest.name}</h3>
-                          <div className='text-container-second'>
-                            <div className='distance-container'>
-                              <h5 className='margin-right'>| {rest.miles}</h5>
-                              <h5>| {rest.time}</h5>
-                            </div>
-                            <h5>| {rest.fee}</h5>
-                          </div>
+                    <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                      <section className='card-container-2' key={index}>
+                        <div className='img-container'>
+                          <img src={rest.img} alt='pizza hut' />
                         </div>
-                        <article className='arrow-container'>
-                          <h4>Popular Items</h4>
-                          <IoIosArrowDropupCircle className='arrow' />
-                        </article>
-                      </div>
-                    </section>
+                        <div className='card-info-container'>
+                          <div className='text-container'>
+                            <h3>{rest.name}</h3>
+                            <div className='text-container-second'>
+                              <div className='distance-container'>
+                                <h5 className='margin-right'>| {rest.miles}</h5>
+                                <h5>| {rest.time}</h5>
+                              </div>
+                              <h5>| {rest.fee}</h5>
+                            </div>
+                          </div>
+                          <article className='arrow-container'>
+                            <h4>Popular Items</h4>
+                            <IoIosArrowDropupCircle className='arrow' />
+                          </article>
+                        </div>
+                      </section>
+                    </ScrollAnimation>
                   );
                 })}
               </main>
               <main className='column-2'>
                 {RestaurantDataTwo.map((rest, index) => {
                   return (
-                    <section className='card-container' key={index}>
-                      <div className='img-container'>
-                        <img src={rest.img} alt='burger spot' />
-                      </div>
-                      <div className='card-info-container'>
-                        <div className='text-container'>
-                          <h3>{rest.name}</h3>
-                          <div className='text-container-second'>
-                            <div className='distance-container'>
-                              <h5 className='margin-right'>| {rest.miles}</h5>
-                              <h5>| {rest.time}</h5>
-                            </div>
-                            <h5>| {rest.fee}</h5>
-                          </div>
+                    <ScrollAnimation animateIn='flipInY' animateOut='flipOutY'>
+                      <section className='card-container' key={index}>
+                        <div className='img-container'>
+                          <img src={rest.img} alt='burger spot' />
                         </div>
-                        <article className='arrow-container'>
-                          <h4>Popular Items</h4>
-                          <IoIosArrowDropupCircle className='arrow' />
-                        </article>
-                      </div>
-                    </section>
+                        <div className='card-info-container'>
+                          <div className='text-container'>
+                            <h3>{rest.name}</h3>
+                            <div className='text-container-second'>
+                              <div className='distance-container'>
+                                <h5 className='margin-right'>| {rest.miles}</h5>
+                                <h5>| {rest.time}</h5>
+                              </div>
+                              <h5>| {rest.fee}</h5>
+                            </div>
+                          </div>
+                          <article className='arrow-container'>
+                            <h4>Popular Items</h4>
+                            <IoIosArrowDropupCircle className='arrow' />
+                          </article>
+                        </div>
+                      </section>
+                    </ScrollAnimation>
                   );
                 })}
               </main>
