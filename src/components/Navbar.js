@@ -45,6 +45,7 @@ const Navbar = () => {
                 name='text'
                 placeholder='Search'
                 className='search-input'
+                autoComplete='off'
               />
             </div>
           </form>
