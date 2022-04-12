@@ -105,6 +105,7 @@ const Wrapper = styled.section`
 
   .container {
     margin-top: 5vh;
+    margin-right: 0.5rem;
     min-width: 40vw;
     display: flex;
     flex-direction: column;
