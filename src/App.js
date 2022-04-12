@@ -6,6 +6,7 @@ import Menu from './components/Menu';
 import Shop from './components/Shop';
 import Service from './components/Service';
 import Sidebar from './components/Sidebar';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/menu' element={<Menu />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/service' element={<Service />} />
+        <Route path='*' element={<Error />} />
       </Routes>
     </Router>
   );
