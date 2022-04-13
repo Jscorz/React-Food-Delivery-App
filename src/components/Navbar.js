@@ -216,7 +216,7 @@ const Wrapper = styled.section`
     border-radius: 50%;
     padding: 0.3rem;
     cursor: pointer;
-    margin-right: 7rem;
+    /* margin-right: 2rem; */
 
     &:hover {
       border: 2px solid rgba(200, 17, 54, 0.9);
@@ -232,13 +232,6 @@ const Wrapper = styled.section`
     @media only screen and (max-width: 750px) {
       padding: 0.3rem;
       transform: translateX(-100%);
-    }
-
-    @media only screen and (max-width: 600px) {
-      margin-right: 20%;
-    }
-    @media only screen and (max-width: 450px) {
-      margin-right: 25%;
     }
 
     @media only screen and (min-width: 1200px) {
