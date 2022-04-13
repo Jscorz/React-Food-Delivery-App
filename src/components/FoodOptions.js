@@ -95,7 +95,7 @@ const Wrapper = styled.section`
 
   .container {
     transform: translateX(-50%);
-    background: white;
+    background-color: rgba(0, 0, 0, 0.3);
     height: 40vh;
     min-width: 12vw;
     padding: 1rem;
@@ -128,6 +128,7 @@ const Wrapper = styled.section`
       transform: translateX(0);
       padding: 0.5rem 1.5rem;
       border-radius: 0.5rem;
+      background-color: rgba(0, 0, 0, 0.2);
 
       &:hover {
         transform: scale(1.03);

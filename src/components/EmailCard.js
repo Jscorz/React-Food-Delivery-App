@@ -76,7 +76,7 @@ const Wrapper = styled.section`
 
   .email {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 2rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     margin-right: 1rem;
 
