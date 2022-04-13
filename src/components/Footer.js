@@ -20,6 +20,10 @@ const Wrapper = styled.section`
     color: rgba(0, 0, 0, 0.7);
     word-spacing: 0.3rem;
     height: 5rem;
+
+    @media only screen and (max-width: 750px) {
+      font-size: 0.8rem;
+    }
   }
 `;
 
