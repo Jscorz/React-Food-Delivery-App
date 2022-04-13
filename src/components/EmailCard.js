@@ -75,7 +75,7 @@ const Wrapper = styled.section`
   }
 
   .email {
-    font-weight: 200;
+    color: rgba(0, 0, 0, 0.7);
     font-size: 2rem;
     white-space: nowrap;
     margin-right: 1rem;
@@ -94,7 +94,7 @@ const Wrapper = styled.section`
 
   button {
     font-size: 2.5rem;
-    color: rgba(255, 72, 0, 0.4);
+    color: rgba(255, 72, 0, 0.7);
     background: transparent;
     border: none;
     cursor: pointer;
