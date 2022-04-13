@@ -167,7 +167,7 @@ const Wrapper = styled.section`
   }
 
   h2 {
-    color: rgba(0, 0, 0, 0.7);
+    color: #e5e5e5;
     margin-top: 1rem;
 
     @media only screen and (max-width: 1200px) {
@@ -190,8 +190,8 @@ const Wrapper = styled.section`
   }
 
   h3 {
-    color: rgba(0, 0, 0, 0.6);
-
+    /* color: rgba(0, 0, 0, 0.6); */
+    color: #e5e5e5;
     @media only screen and (max-width: 700px) {
       font-size: 0.5rem;
       padding-bottom: 1rem;
@@ -199,7 +199,7 @@ const Wrapper = styled.section`
   }
 
   .price {
-    color: rgba(255, 72, 0, 0.7);
+    color: #e5e5e5;
     font-weight: 500;
 
     @media only screen and (max-width: 700px) {
