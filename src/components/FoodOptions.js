@@ -207,10 +207,10 @@ const Wrapper = styled.section`
   }
 
   .btn {
-    font-size: 2rem;
+    font-size: 2.2rem;
 
     @media only screen and (max-width: 700px) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     &-container {
@@ -225,12 +225,12 @@ const Wrapper = styled.section`
 
   .filled {
     color: rgba(255, 72, 0, 0.8);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     margin-left: 0.5rem;
 
     @media only screen and (max-width: 1100px) {
-      margin-left: 0;
+      margin-left: 0.3rem;
     }
   }
 

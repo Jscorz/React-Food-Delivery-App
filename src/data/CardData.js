@@ -6,7 +6,7 @@ export const CardData = [
     id: 1,
     img: burger,
     name: 'burger',
-    description: 'with onion rings',
+    description: 'onion rings',
     price: 5.25,
   },
   {
