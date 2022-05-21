@@ -1,18 +1,21 @@
-import React, { useEffect } from 'react';
-import '../index.css';
-import ScrollAnimation from 'react-animate-on-scroll';
-import styled from 'styled-components';
-import CardData from '../data/CardData';
-import CardDataTwo from '../data/CardDataTwo';
-import { Link } from 'react-router-dom';
-import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
+import React, { useRef, useEffect } from "react";
+import "../index.css";
+import { gsap } from "gsap";
+import styled from "styled-components";
+import CardData from "../data/CardData";
+import CardDataTwo from "../data/CardDataTwo";
+import { Link } from "react-router-dom";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const FoodOptions = () => {
-  useEffect(() => {}, []);
+  const boxRef = useRef();
+  useEffect(() => {
+    gsap.to(boxRef.current, { duration: 1, rotation: "+=360" });
+  });
 
   return (
     <Wrapper>
-      <section className='two'>
+      <section className='two' ref={boxRef}>
         {CardDataTwo.map((item, index) => {
           return (
             <Link to='/Shop' key={index}>
