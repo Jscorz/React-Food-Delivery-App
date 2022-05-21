@@ -1,10 +1,39 @@
-import React, { useState, useRef } from 'react';
-import '../index.css';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import "../index.css";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 const Menu = () => {
+  const boxRef = useRef();
+  const boxRefTwo = useRef();
+  const boxRefThree = useRef();
+
+  useEffect(() => {
+    gsap.from(boxRef.current, {
+      duration: 1,
+      opacity: 0,
+      x: -100,
+    });
+  });
+  useEffect(() => {
+    gsap.from(boxRefTwo.current, {
+      duration: 1,
+      opacity: 0,
+      x: -30,
+      delay: 1.3,
+    });
+  });
+  useEffect(() => {
+    gsap.from(boxRefThree.current, {
+      duration: 1,
+      opacity: 0,
+      x: 30,
+      delay: 1.2,
+    });
+  });
+
   return (
     <Wrapper>
       <section className='grid'>
@@ -12,14 +41,14 @@ const Menu = () => {
           <div className='background'>
             <main className='card'>
               <p>No menu from us, but here are some </p>
-              <Link to='/Shop'>
+              <Link to='/Shop' ref={boxRef}>
                 <span>great options</span>
               </Link>
               <div className='button-container'>
-                <Link to='/'>
+                <Link to='/' ref={boxRefThree}>
                   <button className='home'>Back to Home</button>
                 </Link>
-                <Link to='/Shop'>
+                <Link to='/Shop' ref={boxRefTwo}>
                   <button className='button'>
                     <BsArrowRightCircle />
                   </button>
