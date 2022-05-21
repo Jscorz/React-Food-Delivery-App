@@ -1,31 +1,60 @@
-import React from 'react';
-import styled from 'styled-components';
-import { MdDirectionsBike } from 'react-icons/md';
-import { BiPlayCircle } from 'react-icons/bi';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import styled from "styled-components";
+import { MdDirectionsBike } from "react-icons/md";
+import { BiPlayCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const MainText = () => {
+  const boxRef = useRef();
+  const boxRefTwo = useRef();
+  const boxRefThree = useRef();
+
+  useEffect(() => {
+    gsap.from(boxRef.current, {
+      duration: 1,
+      opacity: 0,
+      x: -100,
+    });
+  });
+  useEffect(() => {
+    gsap.from(boxRefTwo.current, {
+      duration: 1,
+      opacity: 0,
+      y: -30,
+      delay: 1.2,
+    });
+  });
+  useEffect(() => {
+    gsap.from(boxRefThree.current, {
+      duration: 1,
+      opacity: 0,
+      y: 30,
+      delay: 1.4,
+    });
+  });
+
   return (
     <Wrapper>
-      <section>
-        <article>
+      <section ref={boxRef}>
+        <article ref={boxRefThree}>
           <p>bike delivery</p>
           <button className='bike'>
             <MdDirectionsBike />
           </button>
         </article>
-        <main>
+        <main ref={boxRefTwo}>
           The Fastest <br />
           Delivery in <br />
           <span>Your City</span>
         </main>
-        <div className='short-text'>
+        <div className='short-text' ref={boxRefThree}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           officiis id fugit iste exercitationem esse maxime, sequi dolor.
           Repudiandae, vitae.
         </div>
         <Link to='Shop'>
-          <div className='button-container'>
+          <div className='button-container' ref={boxRefThree}>
             <button className='order'>order now</button>
             <button className='play'>
               <BiPlayCircle />

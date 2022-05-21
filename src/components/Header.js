@@ -1,8 +1,9 @@
-import React, { useState, useRef } from 'react';
-import '../index.css';
-import styled from 'styled-components';
-import MainText from './MainText';
-import FoodOptions from './FoodOptions';
+import React from "react";
+
+import "../index.css";
+import styled from "styled-components";
+import MainText from "./MainText";
+import FoodOptions from "./FoodOptions";
 
 const Header = () => {
   return (
