@@ -9,8 +9,12 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const FoodOptions = () => {
   const boxRef = useRef();
+  const boxRefTwo = useRef();
   useEffect(() => {
-    gsap.to(boxRef.current, { duration: 1, rotation: "+=360" });
+    gsap.from(boxRef.current, { duration: 1, opacity: 0, y: 30 });
+  });
+  useEffect(() => {
+    gsap.from(boxRefTwo.current, { duration: 1, opacity: 0, y: -30 });
   });
 
   return (
@@ -38,7 +42,7 @@ const FoodOptions = () => {
         })}
       </section>
 
-      <section className='one'>
+      <section className='one' ref={boxRefTwo}>
         {CardData.map((item, index) => {
           return (
             <Link to='/Shop' key={index}>
