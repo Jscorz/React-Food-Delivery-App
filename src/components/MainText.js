@@ -15,6 +15,7 @@ const MainText = () => {
       duration: 1,
       opacity: 0,
       x: -100,
+      delay: 0.5,
     });
   });
   useEffect(() => {
@@ -29,15 +30,16 @@ const MainText = () => {
     gsap.from(boxRefThree.current, {
       duration: 1,
       opacity: 0,
-      y: 30,
-      delay: 1.6,
+      y: 150,
+      delay: 2.5,
+      ease: "bounce",
     });
   });
 
   return (
     <Wrapper>
-      <section ref={boxRef}>
-        <article ref={boxRefThree}>
+      <section>
+        <article>
           <p>bike delivery</p>
           <button className='bike'>
             <MdDirectionsBike />
@@ -48,13 +50,13 @@ const MainText = () => {
           Delivery in <br />
           <span>Your City</span>
         </main>
-        <div className='short-text' ref={boxRefThree}>
+        <div className='short-text' ref={boxRef}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           officiis id fugit iste exercitationem esse maxime, sequi dolor.
           Repudiandae, vitae.
         </div>
-        <Link to='Shop'>
-          <div className='button-container' ref={boxRefThree}>
+        <Link to='Shop' ref={boxRefThree}>
+          <div className='button-container'>
             <button className='order'>order now</button>
             <button className='play'>
               <BiPlayCircle />

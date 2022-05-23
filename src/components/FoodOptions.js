@@ -11,13 +11,13 @@ const FoodOptions = () => {
   const boxRef = useRef();
   const boxRefTwo = useRef();
   useEffect(() => {
-    gsap.from(boxRef.current, { duration: 1, opacity: 0, y: 30, delay: 1.2 });
+    gsap.from(boxRef.current, { duration: 1, opacity: 0, x: 100, delay: 1.2 });
   });
   useEffect(() => {
     gsap.from(boxRefTwo.current, {
       duration: 1,
       opacity: 0,
-      y: -30,
+      x: -100,
       delay: 1.2,
     });
   });
