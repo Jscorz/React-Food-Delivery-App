@@ -4,9 +4,9 @@ I decided to build a food delivery app with React JS because I thought it would 
 
 **Link to project: [Live-demo]https://meals2u.netlify.app**
 
-|               Desktop               |                  Mobile                   |
-| :---------------------------------: | :---------------------------------------: |
-| ![meals2u](src/assets/meals2u1.png) | ![meals2u2](src/assets/meals2umobile.png) |
+---
+
+![screen-gif](./src/assets/ezgif.com-gif-maker.gif)
 
 ---
 
